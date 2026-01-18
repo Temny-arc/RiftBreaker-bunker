@@ -2,19 +2,19 @@ package IngameSys;
 
 public interface Commander {
     /*
-    Int represents action, most commands doo but dialog and search have no penality if you have done it before
+    Int represents action, most commands do but dialog and search have no penality if you have done it before
 
      */
 
-    public int move();
+    public int move(String arg);
 
-    public int dialog();
+    public int dialog(String arg);
 
-    public int search();
+    public int search(String arg);
 
-    public int invent();
+    public int invent(String arg);
 
-    public int help();
+    public int help(String arg);
 
 
 }

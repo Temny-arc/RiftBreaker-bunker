@@ -9,25 +9,25 @@ public class Hallway implements Commander {
     }
 
     @Override
-    public int dialog() {
+    public int dialog(String arg) {
         //TODO talk to a women
         return 0;
     }
 
     @Override
-    public int search() {
+    public int search(String arg) {
         //TODO if there is something from event allow triggering
         return 0;
     }
 
     @Override
-    public int invent() {
+    public int invent(String arg) {
         //TODO this is just heal
         return 0;
     }
 
     @Override
-    public int help() {
+    public int help(String arg) {
         //TODO info player to move
         return 0;
     }

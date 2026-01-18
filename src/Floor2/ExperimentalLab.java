@@ -5,27 +5,27 @@ import IngameSys.Commander;
 public class ExperimentalLab implements Commander {
     //TODO exactly same as before
     @Override
-    public int move() {
+    public int move(String arg) {
         return 0;
     }
 
     @Override
-    public int dialog() {
+    public int dialog(String arg) {
         return 0;
     }
 
     @Override
-    public int search() {
+    public int search(String arg) {
         return 0;
     }
 
     @Override
-    public int invent() {
+    public int invent(String arg) {
         return 0;
     }
 
     @Override
-    public int help() {
+    public int help(String arg) {
         return 0;
     }
 }
