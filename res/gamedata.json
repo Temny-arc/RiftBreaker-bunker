@@ -1,0 +1,142 @@
+{
+  "items": [
+    {
+      "id": "item_bluekey",
+      "name": "Blue Keycard",
+      "type": "CARD",
+      "description": "This keycard is blue, you can also notice an id on it: 425571"
+    },
+    {
+      "id": "item_redkey",
+      "name": "Red Keycard",
+      "type": "CARD",
+      "description": "This keycard is blue, you can also notice an id on it: 825571 and letters A,B"
+    },
+    {
+      "id": "item_yellowkey",
+      "name": "Yellow Keycard",
+      "type": "CARD",
+      "description": "This keycard is blue, you can also notice an id on it: 425571 and letters A,C"
+    },
+    {
+      "id": "item_greenkey",
+      "name": "Green Keycard",
+      "type": "CARD",
+      "description": "This keycard is blue, you can also notice an id on it: 425571 and letters D"
+    },
+    {
+      "id": "item_orangekey",
+      "name": "Orange Keycard",
+      "type": "CARD",
+      "description": "This keycard is blue, you can also notice an id on it: 425571 and letters B,E"
+    },
+    {
+      "id": "item_pinkkey",
+      "name": "Pink Keycard",
+      "type": "CARD",
+      "description": "This keycard is blue, you can also notice an id on it: 425571 and letters A,B,C,D,E"
+    }
+  ],
+  "characters": [
+    {
+      "id": "npc_SteveDoe",
+      "name": "Steve Doe",
+      "role": "NPC",
+      "talk_color": "dark blue",
+      "notes": "only talks in cases he wants to, he is kind of busy right now"
+    },
+    {
+      "id": "npc_E.V.A.",
+      "name": "E.V.A.",
+      "role": "NPC",
+      "talk_color": "red",
+      "notes": "Usualy speeks of what to do for player, in specific case player can talk to her",
+    },
+    {
+      "id": "npc_IvanVladimirovičKuhar",
+      "name": "Doc. Ivan Vladimirovič Kuhar",
+      "role": "NPC",
+      "talk_color": "teal",
+      "notes": "only talks in cases he wants to, he is kind of busy right now"
+    },
+    {
+      "id": "npc_AliceStoker",
+      "name": "Alice Stoker",
+      "role": "Companion",
+      "talk_color": "purple",
+      "notes": "Once you rescue her you can talk to her in every room"
+    },
+    {
+      "id": "npc_FrostSpirit",
+      "name": "Frost Spirit",
+      "role": "Enemy",
+      "talk_color": "orange",
+      "notes": "Talks if need just because you can also fight him, Reading the temperature is beginning to plummet its almost here, we have got visual, is that a Frost Sprit!?, Send him back to his frozen wasteland"
+    }
+  ],
+  "weapons": [
+    {
+      "id": "weapon_pistol",
+      "name": "pistol",
+      "dmg": 5,
+      "dmgtype": "range",
+      "note": "The good old weapon you have, use it wisely"
+    },
+    {
+      "id": "weapon_knife",
+      "name": "knife",
+      "dmg": 12,
+      "dmgtype": "melee",
+      "note": "nice knife, what? secret in secret ending"
+    },
+    {
+      "id": "weapon_shotgun",
+      "name": "saved off",
+      "dmg": 20,
+      "dmgtype": "range"
+    },
+    {
+      "id": "weapon_sword",
+      "name": "Galaxy sword",
+      "dmg": 30,
+      "dmgtype": "melee",
+      "note": "It has to be this way"
+    },
+    {
+      "id": "weapon_enhancedsword",
+      "name": "Infinity Blade",
+      "dmg": 72,
+      "dmgtype": "melee",
+      "note": "The scarlet bloom once more you will witness true horror"
+    },
+    {
+      "id": "weapon_ultimate",
+      "name": "coffee cup",
+      "dmg": 353,
+      "dmgtype": "melee",
+      "note": "Someone left their cup, do to its often use you can still smell the coffee from it"
+    }
+
+
+
+
+
+
+
+
+  ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
