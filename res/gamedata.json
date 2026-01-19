@@ -1,5 +1,5 @@
 {
-  "items": [
+  "Items": [
     {
       "id": "item_bluekey",
       "name": "Blue Keycard",
@@ -37,7 +37,7 @@
       "description": "This keycard is blue, you can also notice an id on it: 425571 and letters A,B,C,D,E"
     }
   ],
-  "characters": [
+  "Characters": [
     {
       "id": "npc_SteveDoe",
       "name": "Steve Doe",
@@ -50,7 +50,7 @@
       "name": "E.V.A.",
       "role": "NPC",
       "talk_color": "red",
-      "notes": "Usualy speeks of what to do for player, in specific case player can talk to her",
+      "notes": "Usualy speeks of what to do for player, in specific case player can talk to her"
     },
     {
       "id": "npc_IvanVladimirovičKuhar",
@@ -74,7 +74,7 @@
       "notes": "Talks if need just because you can also fight him, Reading the temperature is beginning to plummet its almost here, we have got visual, is that a Frost Sprit!?, Send him back to his frozen wasteland"
     }
   ],
-  "weapons": [
+  "Weapons": [
     {
       "id": "weapon_pistol",
       "name": "pistol",
@@ -116,6 +116,27 @@
       "dmgtype": "melee",
       "note": "Someone left their cup, do to its often use you can still smell the coffee from it"
     }
+  ],
+  "Locations": [
+    {
+      "id": "location_enterance",
+      "numofscouts": 5,
+      "scouttxt0": "thre wiell ",
+      "scouttxt1": "be smoke"
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -125,6 +146,8 @@
 
 
   ]
+
+
 
 
 
