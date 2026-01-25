@@ -2,17 +2,25 @@ package Floor2;
 
 import IngameSys.Commander;
 
+import java.util.HashMap;
+
 public class Cryochamber implements Commander {
 
 
     @Override
-    public int move(String arg) {
-        return 0;
+    public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
+        if (arg.equals("lab")){
+            map.replace(0,14);
+        } else if (arg.equals("hallway")) {
+            map.replace(0,8);
+        }
+
+        return map;
     }
 
     @Override
-    public int dialog(String arg) {
-        return 0;
+    public HashMap<Integer, Integer> dialog(String arg, HashMap<Integer, Integer> map) {
+        return map;
     }
 
     @Override

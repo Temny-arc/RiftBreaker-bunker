@@ -2,16 +2,25 @@ package Floor1;
 
 import IngameSys.Commander;
 
+import java.util.HashMap;
+
 public class Stairs implements Commander {
     //TODO this room will work like hallway
     @Override
-    public int move(String arg) {
-        return 0;
+    public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
+
+        if (true){
+            //TODO logic
+            map.replace(0,0);// for the first floor
+
+
+        }
+        return map;
     }
 
     @Override
-    public int dialog(String arg) {
-        return 0;
+    public HashMap<Integer, Integer> dialog(String arg, HashMap<Integer, Integer> map) {
+        return map;
     }
 
     @Override

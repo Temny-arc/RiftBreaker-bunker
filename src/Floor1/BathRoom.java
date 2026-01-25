@@ -2,16 +2,20 @@ package Floor1;
 
 import IngameSys.Commander;
 
+import java.util.HashMap;
+
 public class BathRoom implements Commander {
 
     @Override
-    public int move(String arg) {
-        return 0;
+    public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
+
+
+        return map;
     }
 
     @Override
-    public int dialog(String arg) {
-        return 0;
+    public HashMap<Integer, Integer> dialog(String arg, HashMap<Integer, Integer> map) {
+        return map;
     }
 
     @Override

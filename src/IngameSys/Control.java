@@ -19,8 +19,49 @@ public class Control {
     }
 
 
+    public HashMap<Integer, Integer> getData() {
+        return data;
+    }
+
+    public void setData(HashMap<Integer, Integer> data) {
+        this.data = data;
+    }
+
+    public HashMap<String, Commander> getTrigger() {
+        return trigger;
+    }
+
+    public void setTrigger(HashMap<String, Commander> trigger) {
+        this.trigger = trigger;
+    }
+
+    public int getTurn() {
+        return turn;
+    }
+
+    public void setTurn(int turn) {
+        this.turn = turn;
+    }
+
+    public boolean isExit() {
+        return exit;
+    }
+
+    public void setExit(boolean exit) {
+        this.exit = exit;
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
 
     public void comando(){
+        Control c = new Control();
+        data.put(0,0);
         //TODO  vytvor commandy
     }
     public void executor(){
@@ -33,33 +74,7 @@ public class Control {
     public void save(){
         //TODO dat data z mapy do souboru
     }
-    public static Control load(String resourcePath){
-        //TODO nacist data ze souboru do hashmapy data
-        Gson gson = new Gson();
 
-        //Načtení souboru gamedata.json, musí být ve složce res/resources, ta musí být označena jako resource složka projektu
-        try (InputStream is = Main.class.getResourceAsStream(resourcePath)) {
-
-            //Zde ověřujeme, zdali soubor existuje
-            if (is == null) {
-                throw new IllegalStateException("Nenalezen resource: " + resourcePath +
-                        " (zkontrolujte, že soubor je v src/main/resources).");
-            }
-
-            //Přečte celý JSON a vytvoří instanci GameData, naplní vlastnosti podle názvů klíčů v JSONU, vrátí se hotová třída GameData
-            return gson.fromJson(
-                    new InputStreamReader(is, StandardCharsets.UTF_8),
-                    Control.class
-            );
-
-        } catch (Exception e) {
-            throw new RuntimeException("Chyba při načítání JSON: " + e.getMessage());
-        }
-
-
-
-
-    }
 
 
 

@@ -1,5 +1,5 @@
 {
-  "Items": [
+  "items": [
     {
       "id": "item_bluekey",
       "name": "Blue Keycard",
@@ -37,7 +37,7 @@
       "description": "This keycard is blue, you can also notice an id on it: 425571 and letters A,B,C,D,E"
     }
   ],
-  "Characters": [
+  "characters": [
     {
       "id": "npc_SteveDoe",
       "name": "Steve Doe",
@@ -74,7 +74,7 @@
       "notes": "Talks if need just because you can also fight him, Reading the temperature is beginning to plummet its almost here, we have got visual, is that a Frost Sprit!?, Send him back to his frozen wasteland"
     }
   ],
-  "Weapons": [
+  "weapons": [
     {
       "id": "weapon_pistol",
       "name": "pistol",
@@ -87,13 +87,14 @@
       "name": "knife",
       "dmg": 12,
       "dmgtype": "melee",
-      "note": "nice knife, what? secret in secret ending"
+      "note": "Good weapon against food and evil"
     },
     {
       "id": "weapon_shotgun",
       "name": "saved off",
       "dmg": 20,
-      "dmgtype": "range"
+      "dmgtype": "range",
+      "note": "Using a shotgun is like trowing huge rock at enemy"
     },
     {
       "id": "weapon_sword",
@@ -117,35 +118,53 @@
       "note": "Someone left their cup, do to its often use you can still smell the coffee from it"
     }
   ],
-  "Locations": [
+  "roomData" : [
     {
-      "id": "location_enterance",
-      "numofscouts": 5,
-      "scouttxt0": "thre wiell ",
-      "scouttxt1": "be smoke"
-
-
-
+      "id": "enterance_item0?",
+      "text": "there apears to be an interesting item lying on the floor do you want to pick it? yes = 0 no =1"
+    },
+    {
+      "id": "enterance_item0a",
+      "text": "Its a bandage, this could prove usefully, tho someone used it before"
+    },
+    {
+      "id": "enterance_item0b",
+      "text": "There is something that dont fit here. "
+    },
+    {
+      "id": "enterance_item1?",
+      "text": "Its a bandage, this could prove usefully"
     }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   ]
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

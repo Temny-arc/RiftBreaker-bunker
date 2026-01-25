@@ -1,0 +1,23 @@
+item_bluekey;Blue Keycard;CARD;This keycard is blue, you can also notice an id on it: 425571
+item_redkey;Red Keycard;CARD;This keycard is red, you can also notice an id on it: 425571
+item_yellowkey;Yellow Keycard;CARD;This keycard is blue, you can also notice an id on it: 425571
+item_greenkey;Green Keycard;CARD;This keycard is blue, you can also notice an id on it: 425571
+item_orangekey;Orange Keycard;CARD;This keycard is blue, you can also notice an id on it: 425571
+item_pinkkey;Pink Keycard;CARD;This keycard is blue, you can also notice an id on it: 425571
+switch
+npc_SteveDoe;Steve Doe;NPC;dark blue;only talks in cases he wants to, he is kind of busy right now
+npc_E.V.A.;E.V.A.;NPC;pink;Usualy speeks of what to do for player, in specific case player can talk to her
+npc_IvanVladimirovičKuhar;Doc. Ivan Vladimirovič Kuhar;NPC;teal;only talks in cases he wants to, he is kind of busy right now
+npc_AliceStoker;Alice Stoker;Companion;purple;Once you rescue her you can talk to her in every room
+npc_FrostSpirit;FrostSpirit;Enemy;purple;Talks if need just because you can also fight him, Reading the temperature is beginning to plummet its almost here, we have got visual, is that a Frost Sprit!?, Send him back to his frozen wasteland
+switch
+weapon_pistol;pistol;5;range;The good old weapon you have, use it wisely
+weapon_knife;knife;12;melee;Police is still investigating a suicide of five people with a knife.
+weapon_shotgun;saved off;20;melee;Using a shotgun is like trowing huge rock at enemy
+weapon_sword;Galaxy sword;30;melee;Stand between the pillars three,With gift as precious as the sky: A rainbow forged from land, not sea  Then galaxies will heed your cry
+weapon_enhance;Infinity blade;72;melee;What? Nice knife. take this weapon to a strong foe and find a secret
+weapon_ultimate;Coffee cup;353;Someone left their cup, do to its often use you can still smell the coffee from it
+switch
+enterance_item0?;there apears to be an interesting item lying on the floor do you want to pick it? yes = 0 no =1
+enterance_item0a;Its a bandage, this could prove usefully, tho someone used it before
+enterance_item0b;There is something that dont fit here.
