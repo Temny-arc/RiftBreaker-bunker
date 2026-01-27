@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.IllegalFormatCodePointException;
 import java.util.Scanner;
 
 public class Control {
@@ -96,13 +97,26 @@ public class Control {
             case 5, 6:
                 return "G";
             case 7:
+                return "F";
+            case 9:
+                return "I";
+            case 10:
                 return "H";
-
+            case 11:
+                return "J";
+            case 12:
+                return "I";
+            case 13:
+                return "O";
+            case 14:
+                return "P";
+            case 15:
+                return "Q";
 
         }
 
 
-
+        return "A";
 
 
 
@@ -114,7 +128,18 @@ public class Control {
         System.out.print(">>");
         String prikaz = scanner.next();
         prikaz = prikaz.trim().toLowerCase();
-
+        if (prikaz.equals("move")) {
+            trigger.get(decider(data.get(0))) // decide which room will be working
+                    .move("hala", data);// now does trigger the command in specific room
+        }  else if (prikaz.equals("dialog")) {
+            trigger.get(decider(data.get(0))).dialog("tmp", data); // this is just smaller version
+        } else if (prikaz.equals("search")) {
+            trigger.get(decider(data.get(0))).search("tmp"); // this is just smaller version
+        } else if (prikaz.equals("inventory")) {
+            trigger.get(decider(data.get(0))).search("tmp"); // this is just smaller version
+        } else if (prikaz.equals("help")) {
+            trigger.get(decider(data.get(0))).search("tmp"); // this is just smaller version
+        }
     }
     public String director(){
         //TODO spojeni se vsim
