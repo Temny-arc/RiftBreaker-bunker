@@ -16,7 +16,7 @@ weapon_knife;knife;12;melee;Police is still investigating a suicide of five peop
 weapon_shotgun;saved off;20;melee;Using a shotgun is like trowing huge rock at enemy
 weapon_sword;Galaxy sword;30;melee;Stand between the pillars three,With gift as precious as the sky: A rainbow forged from land, not sea  Then galaxies will heed your cry
 weapon_enhance;Infinity blade;72;melee;What? Nice knife. take this weapon to a strong foe and find a secret
-weapon_ultimate;Coffee cup;353;Someone left their cup, do to its often use you can still smell the coffee from it
+weapon_ultimate;Coffee cup;353;melee;Someone left their cup, do to its often use you can still smell the coffee from it
 switch
 enterance_item0?;there apears to be an interesting item lying on the floor do you want to pick it? yes = 0 no =1
 enterance_item0a;Its a bandage, this could prove usefully, tho someone used it before

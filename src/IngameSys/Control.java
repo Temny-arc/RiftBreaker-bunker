@@ -124,31 +124,81 @@ public class Control {
 
     }
     public void executor(){
-        //TODO volani commandu
         System.out.print(">>");
         String prikaz = scanner.next();
         prikaz = prikaz.trim().toLowerCase();
+        decode d  =new decode();
+        String[] s = d.decod(prikaz);
         if (prikaz.equals("move")) {
             trigger.get(decider(data.get(0))) // decide which room will be working
-                    .move("hala", data);// now does trigger the command in specific room
-        }  else if (prikaz.equals("dialog")) {
-            trigger.get(decider(data.get(0))).dialog("tmp", data); // this is just smaller version
-        } else if (prikaz.equals("search")) {
-            trigger.get(decider(data.get(0))).search("tmp"); // this is just smaller version
-        } else if (prikaz.equals("inventory")) {
-            trigger.get(decider(data.get(0))).search("tmp"); // this is just smaller version
-        } else if (prikaz.equals("help")) {
-            trigger.get(decider(data.get(0))).search("tmp"); // this is just smaller version
+                    .move(s[1], data);// now does trigger the command in specific room
+        }  else if (s[0].equals("dialog")) {
+            trigger.get(decider(data.get(0))).dialog(s[1], data); // this is just smaller version
+        } else if (s[0].equals("search")) {
+            trigger.get(decider(data.get(0))).search(s[1]); // this is just smaller version
+        } else if (s[0].equals("inventory")) {
+            trigger.get(decider(data.get(0))).search(s[1]); // this is just smaller version
+        } else if (s[0].equals("help")) {
+            trigger.get(decider(data.get(0))).search(s[1]); // this is just smaller version
         }
     }
     public String director(){
         //TODO spojeni se vsim
+        comando();// map activation
+        Loader lead = Loader.load("res/moredata.txt");
+        data.put(0,1);
+        data.put(1,1);
+        int c = 0;
+        turn = 0;
+      //  try {
+            while (turn < 40){ // counter for turns works as main cycle
+                while (c <4 ){ // defines the players turn
+                    executor();
+                    c = c - data.get(1);// consumed action? also how many
+
+                }
+                // enemy turn here
+                //enemyturn();
+
+
+
+                turn --;// It's just a for i but bit "enhanced"
+            }
+
+
+
+
+
+
+
+/*
+        } catch (Exception e) {
+            System.out.println("An unexpected error occurred.");
+            return "failure";
+        }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
         return null;
     }
     public void save(){
         //TODO dat data z mapy do souboru
     }
 
+    public void enemyturn(HashMap<String,String> txtdata){
+
+    }
 
 
 

@@ -83,6 +83,7 @@ public class Loader {
             while (!s.equals("switch")){
                 String b[] = s.split(";");
                 System.out.println(b[0]+b[2]);
+
                 loader.weapons.add(new Weapon(b[0],b[1],Integer.parseInt(b[2]),b[3],b[4]));
                 s = br.readLine();
             }

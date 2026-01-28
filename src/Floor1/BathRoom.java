@@ -20,6 +20,10 @@ public class BathRoom implements Commander {
 
     @Override
     public int search(String arg) {
+
+
+
+
         return 0;
     }
 
