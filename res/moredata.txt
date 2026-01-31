@@ -21,3 +21,65 @@ switch
 enterance_item0?;there apears to be an interesting item lying on the floor do you want to pick it? yes = 0 no =1
 enterance_item0a;Its a bandage, this could prove usefully, tho someone used it before
 enterance_item0b;There is something that dont fit here.
+enterance_item1?;When you look at the wall you see an old mech it may prove useful in defence. do you want to activate it? yes = 0 no =1
+enterance_item1a;Mech seams to be active but it will need a pilot, you informed commander about it. He replied: "thank you"
+enterance_item1b;It may be dangerous to activate it so you decided to not turn it on.
+enterance_item2?;On the ground there is a something that reflects the light its buried in snow. Do you want to look at it? yes = 0 no =1
+enterance_item2a;Once you look get close you find that it was a light bump. But there isnt any light broken.
+enterance_item2b;It cant be that interesting you have other things to do
+enterance_item3?;When you are looking at the snow you see foot trails, they lead to a small room do you want to check it out? yes = 0 no =1
+enterance_item3a;When you enter the room some enemy jumps on you. FIGHT!
+enterance_item3b;Those foot trails are interesting, but it may be a trap.
+enterance_item4?;On the left there is a locked container do you want to open it? yes = 0 no =1
+enterance_item4a;It took a while, but you managed to open it. Unfortunately there is nothing inside
+enterance_item4b;It lock frozen and there is probably nothing in it anyway.
+enterance_item5?;A cable is coming out of the wall. Do you want to check it out? yes = 0 no =1
+enterance_item5a;Cable is cold, yet you can feel warm from the below. The reason why its in here is remain of some item that was slammed here
+enterance_item5b;It may be dangerous. Better not walk close near it
+hallway_item0?;You notice that part of the floor is missing. It looks like it's some kind of power structure. It may help outside. Do you want to use it? yes = 0 no =1
+hallway_item1?;Data from area are clear if portal is powered somewhere its here. Data also points that if you turn it of a huge icy wave will apear. End the game by turning of the portal. yes = 0 no =1
+hallway_item1a;Kind of tough decide which of your friends got to die, Isn't it? Good news is you got this one choom who is already dead.
+hallway_item1a+;And he`d be honored to join you on a wild suicide run. You me and the Frost Spirit. Kinda sounds like Eurodyne lyric, I know, but trust me we`ll go fuckin` nova.
+hallway_item1a+-;This plan, what would it entail, exactly?
+hallway_item1a++;"Plan?" Well, might be how Rouge operates. I say you grab the hottest iron you can find, stride to the Bunker front door and cut your own path to the Portal.
+hallway_item1a+++;If Control is so outside, like data points it is. You`ll just have to find a car.
+hallway_item1a++-;If I gotta die, rather fall into my grave gun in hand and on fire. And not draw anyone down with me.
+hallway_item1a++++;Huh, you just discoverer what il takes to become a legend... Grab your iron      -let`s mobilise.
+bedroom_items0-6?;You notice bunch of crates in this room and some beds tied to them. If you want to investigate type a-f or 1-6.
+bedroom_item0a;This crate contains mostly clothes. Strange that you found a hazmat suit so there must be a lab somewhere.
+bedroom_item1a;This crate have some diary in it if you want to read it. yes = 0 no = 1
+bedroom_item1a+;Hah this is my first day here. The place is big. Fascinating there is a reactor below us. Still dunno why. continue? yes = 0 no = 1
+bedroom_item1a++;I met some guy he seems cute, Unfortunately I have still so much to do I just cant talk to him. continue? yes = 0 no = 1
+bedroom_item1a+++;I talked to him he was so nervous. I also played with some guy. It was so funny.Looks like there is only one page left. ;this cant bot read how to get any roblox girl to play with you
+bedroom_item1a++++;He is gone, why? why me? I`m giving up. So I signed as volunteer for the new project. I will probably not return but if yes I will find him.
+bedroom_item2a;Why is in this crate a cup. Like here is only coffee. also some coffee machine.;Kucharik pt0
+bedroom_item3a;Looks like a lot of books not, most are from known people like Steve Armstrong, Michael Kovac etc. but one is from some Vladimir Putin?;note Here isnt the same timeline like russia is controlled by some corp
+bedroom_item4a;Interesting, in the bottom of the crate is shotgun also ammo. the rest looks more like trash
+bedroom_item5a;Someone decided to use his stash as botanist supply. now it looks more like spoilage, there is also note Gleba on it.
+bathroom_item0?You notice a small card in the sink
+bathroom_item0a;It turns out to be a blue keycard. Interesting is that its color is blue and has A and C on it.
+bathroom_item1?When you look to the shower. You notice a man being cornered by a frost creature FIGHT !!
+bathroom_item1-?When you look to the shower. You notice a dead body and some thing made of frost FIGHT !!
+bathroom_item1a;Men replied thank you. And then ask who you are you replied: I m searching for a safe spot.
+bathroom_item1a-;Body contained almost nothing exept a note turn on the f****** generator.
+bathroom_item2?There is a interesting locker on the side. do you want to open it.
+bathroom_item2a;It turns out to be a blue keycard. Interesting is that its color is blue and has A and C on it.
+kitchen_item0?;There may be something in the fridge. Do you want to check it out?
+kitchen_item0a;Its interesting there is nothing in there .
+kitchen_item1?;There is some book in kitchen part. It could prove useful.
+kitchen_item1a;Once you open the book, its cookbook you notice some marks. One have some wierd note: Gift for David from a friend. Than: David is dead, so nothing I guess.;note David is the loved one from the diary in the bedroom
+kitchen_item2?;Wardrobe may have some medication or a weapon. It maybe good to investigate.
+kitchen_item2a;There is a knife, It's something at least.
+kitchen_item3?;Someone left data-tablet on the table. There may be some data in it.
+kitchen_item3a;Tablet have mostly data about some Frost creatures Frost-Baller, Frost-Hunter, Frost-Necromancer and something called as Frost Spirit. You can find more if you want to
+kitchen_item3a+;"Frost-Baller" is creature looking as a human. Its best ability is throwing snowballs. By using some magic(we still dont know how) it can increase durability of the snowball. It main problem is legs are really weak.
+kitchen_item3a++;"Frost-Hunter" is refered for beeing identical with cave men. Has perfect perception, can track down almost everything. They are pact so you mostly newer run into only one. if you hurt his head it will be almost dead.
+kitchen_item3a+++;"Frost-Necromancer" also known as Summoner creates other frost enemies he probably also controls them so killing one can have huge Impact on others. He himself is weak but since he is protected by others its always strong foe.
+kitchen_item3a++++;Frost-Spirit: we expect to be a leader of the Frost people, yet we are not sure if its some mental connection or Person behind it all. if you ever encounter him, know that he can be defeated by huge power only.
+kitchen_item4?;There is a stack of paper. It can be searched to gain some info.
+kitchen_item5a;Some papers are reports from other people, one cathed your eye titled: If MechTech fine what we are doing here we are screwed. Do you want to read the whole article?
+kitchen_item5a+;If they find out we are using a portal they will send entire army to wipe this place of the map. One day we will need to escape this place. If that happens project Vulcan will need to continue elsewhere.
+
+
+
+

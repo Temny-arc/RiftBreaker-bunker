@@ -58,7 +58,7 @@ public class Hallway implements Commander {
     }
 
     @Override
-    public int search(String arg) {
+    public int search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
         //TODO if there is something from event allow triggering
         return 0;
     }

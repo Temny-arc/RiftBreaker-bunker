@@ -28,13 +28,19 @@ public interface Commander {
      * Manufactory = 15
      * @param arg
      * @param map
-     * @return
+     * @return returns the same data exept items in 0 and 1 can be changed 0 is for location and 1 for turn cost
      */
     public HashMap<Integer,Integer> move(String arg,HashMap<Integer,Integer> map);
 
+    /**
+     *
+      * @param arg decider of what to ask it can also be empty
+     * @param map data to enable text since you need to rescue someone or be somewhere in order to even talk to someone
+     * @return data since player can learn something important from a talk
+     */
     public HashMap<Integer,Integer> dialog(String arg,HashMap<Integer,Integer> map);
 
-    public int search(String arg);
+    public int search(String arg,HashMap<Integer,Integer> map,HashMap<String,String> text);
 
     public int invent(String arg);
 

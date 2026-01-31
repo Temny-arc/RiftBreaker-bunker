@@ -22,7 +22,7 @@ public class Laboratory implements Commander {
     }
 
     @Override
-    public int search(String arg) {
+    public int search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
         return 0;
     }
 

@@ -1,15 +1,8 @@
 package IngameSys;
 import Floor1.*;
 import Floor2.*;
-import com.google.gson.Gson;
-import com.sun.tools.javac.Main;
 
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.IllegalFormatCodePointException;
 import java.util.Scanner;
 
 public class Control {
@@ -135,11 +128,11 @@ public class Control {
         }  else if (s[0].equals("dialog")) {
             trigger.get(decider(data.get(0))).dialog(s[1], data); // this is just smaller version
         } else if (s[0].equals("search")) {
-            trigger.get(decider(data.get(0))).search(s[1]); // this is just smaller version
+            trigger.get(decider(data.get(0))).search(s[1],null,null); // this is just smaller version
         } else if (s[0].equals("inventory")) {
-            trigger.get(decider(data.get(0))).search(s[1]); // this is just smaller version
+            trigger.get(decider(data.get(0))).invent(s[1]); // this is just smaller version
         } else if (s[0].equals("help")) {
-            trigger.get(decider(data.get(0))).search(s[1]); // this is just smaller version
+            trigger.get(decider(data.get(0))).help(s[1]); // this is just smaller version
         }
     }
     public String director(){
@@ -157,7 +150,7 @@ public class Control {
                     c = c - data.get(1);// consumed action? also how many
 
                 }
-                // enemy turn here
+                // expect this to be upgraded so not now
                 //enemyturn();
 
 

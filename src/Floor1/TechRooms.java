@@ -18,7 +18,7 @@ public class TechRooms implements Commander {
     }
 
     @Override
-    public int search(String arg) {
+    public int search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
         //TODO decider where you are right now
         return 0;
     }
