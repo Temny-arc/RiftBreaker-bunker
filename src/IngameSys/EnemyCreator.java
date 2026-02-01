@@ -14,6 +14,9 @@ public class EnemyCreator {
         this.dmgtype = dmgtype;
     }
 
+    public EnemyCreator() {
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -47,5 +50,34 @@ public class EnemyCreator {
 
     public int getDmgtype() {
         return dmgtype;
+    }
+
+    public EnemyCreator create(int what){
+        switch(what){
+            case 0:
+                return new EnemyCreator("Frosty",6.0,1,0);
+            case 1:
+                return new EnemyCreator("Snowman",8.0,1,0);
+            case 2:
+                return new EnemyCreator("HalfMelted",4.0,3,0);
+            case 3:
+                return new EnemyCreator("Frost Baller",16.0,8,1);
+            case 4:
+                return new EnemyCreator("Frost Hunter",25.0,6,1);
+            case 5:
+                return new EnemyCreator("Frost Necromancer",15.0,15,2);
+            case 6:
+                return new EnemyCreator("Frost Ravager",60.0,10,0);
+
+
+
+        }
+
+
+
+
+
+
+        return new EnemyCreator("below Natural",32.0,8,0);
     }
 }

@@ -12,7 +12,8 @@ public class Control {
     private int turn;
     private boolean exit;
     private Player player;
-
+    private Loader l;// no this is not L from death note
+    private HashMap<String,String> bliz; //direct data for dialog search
     public Control() {
     }
 
@@ -57,6 +58,9 @@ public class Control {
         this.player = player;
     }
 
+    /**
+     * due this being long it have specific method
+     */
     public void comando(){
         trigger.put("A",new Entrance());
         trigger.put("B",new Hallway());
@@ -73,8 +77,14 @@ public class Control {
         trigger.put("P",new Laboratory());
         trigger.put("Q",new Manufactory());
 
-        //TODO  vytvor commandy
+
     }
+
+    /**
+     * reason this issue exist is me being idiot and not having proper coding but It's something its a decoder that decodes where player is
+     * @param cel is data from hash map as a symbol whitch location you are at
+     * @return key to specific room
+     */
     public String decider(int cel){
         switch(cel){
             case 0:
@@ -116,6 +126,10 @@ public class Control {
 
 
     }
+
+    /**
+     * executor will load data from user and execute one operation in chosen room (this is basically a hybrid between strategy and command)
+     */
     public void executor(){
         System.out.print(">>");
         String prikaz = scanner.next();
@@ -130,7 +144,7 @@ public class Control {
         } else if (s[0].equals("search")) {
             trigger.get(decider(data.get(0))).search(s[1],null,null); // this is just smaller version
         } else if (s[0].equals("inventory")) {
-            trigger.get(decider(data.get(0))).invent(s[1]); // this is just smaller version
+            trigger.get(decider(data.get(0))).invent(l); // this is just smaller version
         } else if (s[0].equals("help")) {
             trigger.get(decider(data.get(0))).help(s[1]); // this is just smaller version
         }
@@ -138,14 +152,15 @@ public class Control {
     public String director(){
         //TODO spojeni se vsim
         comando();// map activation
-        Loader lead = Loader.load("res/moredata.txt");
+        l = Loader.load("res/moredata.txt");
+
         data.put(0,1);
         data.put(1,1);
         int c = 0;
         turn = 0;
-      //  try {
-            while (turn < 40){ // counter for turns works as main cycle
-                while (c <4 ){ // defines the players turn
+        try { // this is basic version it will be updated but due to the program still not having everything we are still by this
+            while (turn < 40) { // counter for turns works as main cycle
+                while (c < 4) { // defines the players turn
                     executor();
                     c = c - data.get(1);// consumed action? also how many
 
@@ -154,22 +169,19 @@ public class Control {
                 //enemyturn();
 
 
-
-                turn --;// It's just a for i but bit "enhanced"
+                turn--;// It's just a for i but bit "enhanced"
+                break; // for now
             }
 
 
 
 
-
-
-
-/*
         } catch (Exception e) {
             System.out.println("An unexpected error occurred.");
-            return "failure";
+            throw new RuntimeException(e);
+
         }
-*/
+
 
 
 

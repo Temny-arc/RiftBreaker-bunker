@@ -1,7 +1,11 @@
 package Floor1;
 
 import IngameSys.Commander;
+import IngameSys.Loader;
+import IngameSys.loadmode.Item;
+import IngameSys.loadmode.Weapon;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Hallway implements Commander {
@@ -64,8 +68,15 @@ public class Hallway implements Commander {
     }
 
     @Override
-    public int invent(String arg) {
-        //TODO this is just heal
+    public int invent(Loader li) {
+        ArrayList<Item> n = li.getItems();
+        ArrayList<Weapon> m = li.getWeapons();
+        for (int i = 0; i < n.size(); i++) {
+            System.out.println(n.get(i));
+        }
+        for (int i = 0; i < m.size(); i++) {
+            System.out.println(m.get(i));
+        }
         return 0;
     }
 

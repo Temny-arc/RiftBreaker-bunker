@@ -28,6 +28,22 @@ public class Loader {
         this.dialog = new HashMap<>();
     }
 
+    public ArrayList<Item> getItems() {
+        return items;
+    }
+
+    public ArrayList<GameCharacter> getChara() {
+        return chara;
+    }
+
+    public ArrayList<Weapon> getWeapons() {
+        return weapons;
+    }
+
+    public HashMap<String, String> getDialog() {
+        return dialog;
+    }
+
     /**
      *
      * @param resourcePath what file you want to read in (its always the same one)
@@ -95,7 +111,7 @@ public class Loader {
                 loader.dialog.put(b[0],b[1]);
                 s = br.readLine();
             }
-
+            return loader;
 
 
 
@@ -107,9 +123,10 @@ public class Loader {
 
 
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            System.out.println("Error detected file not found");
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("Error detected file having a bug");
+
         }
         return null;
 

@@ -42,7 +42,12 @@ public interface Commander {
 
     public int search(String arg,HashMap<Integer,Integer> map,HashMap<String,String> text);
 
-    public int invent(String arg);
+    /**
+     * due to the setup invent will do same thing everywhere so: sad face, still it would need a class not abstract not interface but a true class
+     * @param li all data that will be loaded we will need only weapon and Item for now
+     * @return It's just for fun since nothing happens
+     */
+    public int invent(Loader li);
 
     public int help(String arg);
 

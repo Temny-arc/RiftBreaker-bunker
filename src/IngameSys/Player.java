@@ -1,5 +1,7 @@
 package IngameSys;
 
+import java.util.Scanner;
+
 public class Player {
     private String name;
     private int xp;
@@ -67,9 +69,30 @@ public class Player {
         this.know += 1;
     }
 
+    /**
+     *  Inner function that upgrades yours stats its simple
+     */
     public void lvlup(){
-        // TODO lvl vylepsuje stat
 
+        System.out.println("Level up, now you can increase your stats it, remind that the stats are strength agility and intelligence");
+        Scanner sc = new Scanner(System.in);
+        String s = "";
+        for (int i = 0; i < 3; i++) {
+            System.out.print("you can upgrade bit more by writing str or 0 for strength"+"\n"+ "agi or 1 for agility or"+"\n"+ "or int or 2 for intelligence");
+            s = sc.nextLine();
+            if (s.equals("str")||s.equals("0")) {
+                buffstr();
+            }
+            else if (s.equals("agi")||s.equals("1")) {
+                buffagi();
+            }
+            else if (s.equals("int")||s.equals("2")) {
+                buffknow();
+            } else {
+                this.xp += 3; // this is for someone who not choose any of them
+            }
+
+        }
 
 
 
