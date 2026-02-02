@@ -33,7 +33,8 @@ public class EnemyCreator {
         this.dmgtype = dmgtype;
     }
     public void reducehp(int num){
-        this.hp -= num;
+
+        this.hp = hp - num;
     }
 
     public String getName() {

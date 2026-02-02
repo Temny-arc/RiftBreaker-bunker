@@ -46,6 +46,7 @@ public class BathRoom implements Commander {
 
     @Override
     public int help(String arg) {
+        //System.out.println(text.get(bathroom_item0));
         return 0;
     }
 }

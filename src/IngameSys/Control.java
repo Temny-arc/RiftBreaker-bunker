@@ -132,10 +132,12 @@ public class Control {
      */
     public boolean executor(){
         System.out.print(">> ");
-        String prikaz = scanner.next();
-        prikaz = prikaz.trim().toLowerCase();
+        String prikaz = scanner.nextLine();
+
+        prikaz = prikaz.toLowerCase();
         decode d  =new decode();
         String[] s = d.decod(prikaz);
+        System.out.println(s[0]+" s0 "+ s[1]+" s1");
         switch (s[0]){
             case "move":
                 trigger.get(decider(data.get(0))) // decide which room will be working
@@ -162,8 +164,8 @@ public class Control {
         comando();// map activation
         l = Loader.load("res/moredata.txt");
 
-        data.put(0,1);
-        data.put(1,1);
+        data.put(0,1); // room where you are in
+        data.put(1,1); // cost of action
         int c = 0;
         turn = 0;
         try { // this is basic version it will be updated but due to the program still not having everything we are still by this
