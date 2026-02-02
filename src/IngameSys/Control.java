@@ -130,24 +130,32 @@ public class Control {
     /**
      * executor will load data from user and execute one operation in chosen room (this is basically a hybrid between strategy and command)
      */
-    public void executor(){
-        System.out.print(">>");
+    public boolean executor(){
+        System.out.print(">> ");
         String prikaz = scanner.next();
         prikaz = prikaz.trim().toLowerCase();
         decode d  =new decode();
         String[] s = d.decod(prikaz);
-        if (prikaz.equals("move")) {
-            trigger.get(decider(data.get(0))) // decide which room will be working
-                    .move(s[1], data);// now does trigger the command in specific room
-        }  else if (s[0].equals("dialog")) {
-            trigger.get(decider(data.get(0))).dialog(s[1], data); // this is just smaller version
-        } else if (s[0].equals("search")) {
-            trigger.get(decider(data.get(0))).search(s[1],null,null); // this is just smaller version
-        } else if (s[0].equals("inventory")) {
-            trigger.get(decider(data.get(0))).invent(l); // this is just smaller version
-        } else if (s[0].equals("help")) {
-            trigger.get(decider(data.get(0))).help(s[1]); // this is just smaller version
+        switch (s[0]){
+            case "move":
+                trigger.get(decider(data.get(0))) // decide which room will be working
+                        .move(s[1], data);// now does trigger the command in specific room
+                return true;
+            case  "dialog":
+                trigger.get(decider(data.get(0))).dialog(s[1], data); // this is just smaller version
+                return true;
+            case "search":
+                trigger.get(decider(data.get(0))).search(s[1],null,null); // this is just smaller version
+                return true;
+            case "inventory":
+                trigger.get(decider(data.get(0))).invent(l); // this is just smaller version
+                return true;
+            case "help":
+                trigger.get(decider(data.get(0))).help(s[1]); // this is just smaller version
+                return true;
         }
+        return false;
+
     }
     public String director(){
         //TODO spojeni se vsim
@@ -162,8 +170,8 @@ public class Control {
             while (turn < 40) { // counter for turns works as main cycle
                 while (c < 4) { // defines the players turn
                     executor();
-                    c = c - data.get(1);// consumed action? also how many
-
+                    c = c + data.get(1);// consumed action? also how many
+                    System.out.println(c);
                 }
                 // expect this to be upgraded so not now
                 //enemyturn();

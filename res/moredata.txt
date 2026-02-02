@@ -14,6 +14,7 @@ switch
 weapon_pistol;pistol;5;range;The good old weapon you have, use it wisely
 weapon_knife;knife;12;melee;Police is still investigating a suicide of five people with a knife.
 weapon_shotgun;saved off;20;melee;Using a shotgun is like trowing huge rock at enemy
+weapon_minigun;Gatling gun;42;range;It cost 400,000 dollar to fire this weapon, for 12 seconds -heavy from TF
 weapon_sword;Galaxy sword;30;melee;Stand between the pillars three,With gift as precious as the sky: A rainbow forged from land, not sea  Then galaxies will heed your cry
 weapon_enhance;Infinity blade;72;melee;What? Nice knife. take this weapon to a strong foe and find a secret
 weapon_ultimate;Coffee cup;353;melee;Someone left their cup, do to its often use you can still smell the coffee from it
@@ -104,13 +105,14 @@ cablecar_item2?;The exit route is blocked by snow. You need to find a way how to
 cablecar_item2a;Alice was capable to remove the barrier so the path is clear.
 cableoperator_items?;This is a place that will allow you operate Cable car. The only thing here is the control is missing.
 cableoperator_item0?;There is a computer do you want to read files in it.;This is Davids Computer so have fun
-cableoperator_item0a;Log1: Why I got this room, Im here alone but director mentioned something about secret research. I will be working on other planets. I cant just belive it.
+cableoperator_item0a;Log1: Why I got this room, Im here alone but director mentioned something about secret research. I will be working on other planets. I cant just believe it.
 cableoperator_item0a+;Log2: I talked with John about our game. He told me its halfway done i believe we are much slower than expected. Also John having his youtube channel that he have to upload in sad.
 cableoperator_item0a++;Log3: I like some girl here. what was her name? dunno, anyway i asked her for a date in some game John gave me some tips what to do, he have a lot of experience. We will see tomorrow.
 cableoperator_item0a+++;Log4: First and second step was easy, but third was hard. It took a lot of time, but I believe she enjoyed it. But I guess she dont like me. Like why is she always avoiding me.
 cableoperator_item0a++++;Log5: This will be my last log here but there is no way we will all return from there. I gave Steve love letter that he is supposed to deliver if I die there. But if i die i will with get away from me David.; note Get Away from me John
-experimentallab_item0;On the wall you see a lot of holes. This may help you understand what is going on here
-//TODO doplnit
-
-
-
+experimentallab_item0?;On the wall you see a lot of holes. This may help you understand what is going on here
+experimentallab_item0a;For a unknown reason some holes are hot still. they more look like cold magma. Whatever they were doing here was dangerous.
+experimentallab_item1?;There are some polystyrene statues, but parts of them are on the ground.
+experimentallab_item1a;Someone did clear-cut with some melee weapon there may be blueprints nearby.
+experimentallab_item2?;Someone left a gun on the floor, time to take matters into my own hands;
+experimentallab_item2a;Its a minigun. Someone left note have fun.; the person in game creator BelowNatural also known as King of delays
