@@ -17,9 +17,9 @@ public class Main {
          */
         //Control c = new Control();
         //c.director();
-        Player p = new Player("corso",0,20,12,12);
+        Player p = new Player("corso",0,300,12,12);
         Combat c = new Combat();
-        c.fight(4,p);
+        c.fight(9,p);
 
     }
 }

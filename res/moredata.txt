@@ -115,4 +115,14 @@ experimentallab_item0a;For a unknown reason some holes are hot still. they more 
 experimentallab_item1?;There are some polystyrene statues, but parts of them are on the ground.
 experimentallab_item1a;Someone did clear-cut with some melee weapon there may be blueprints nearby.
 experimentallab_item2?;Someone left a gun on the floor, time to take matters into my own hands;
-experimentallab_item2a;Its a minigun. Someone left note have fun.; the person in game creator BelowNatural also known as King of delays
+experimentallab_item2a;Its a minigun. Someone left note have fun. Time go brr; the person in game creator BelowNatural also known as King of delays
+experimentallab_item3?;There is a computer on the table. If you look close you see Insert keycard;This need A access to open it
+experimentallab_item3-?;Access denied
+experimentallab_item3+?;Access accepted
+experimentallab_item3a;Computer opens, There are some files titled project vulcan
+experimentallab_item3a+;User alert, portal stability 20% and increasing, warning portal stability 50% and increasing, portal fully stable, warning an unknown entities are emerging from the portal, code red indicated. Shutting down the portal.
+experimentallab_item3a++;System is finally working now, we have managed to get some materials from crop1. They look strong, but they all so light we sent them to lab for further study.
+experimentallab_item3a++;After some attempts we have discovered some gateway on Thanaad7 there were some locals who defended that place. If we find how that thing works we can escalate our work here.
+experimentallab_item3a+++;The gateway is active. there is a issue that some frost enetities are moving from it. The place might have been their jail of some sort. but fortunately, looks like we will purge them.
+experimentallab_item3a++++;By using the materials from crop1 we have managed to create super-powerful ammo, but its so cost inefficient. There was an idea to forge some blade that could cut through any material like butter.
+experimentallab_item3a+++++;Frost enemies have overrun our base at Thanaad7 but, the data we got are good, so we

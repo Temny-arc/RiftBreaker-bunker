@@ -14,6 +14,7 @@ public class Control {
     private Player player;
     private Loader l;// no this is not L from death note
     private HashMap<String,String> bliz; //direct data for dialog search
+
     public Control() {
     }
 
@@ -147,7 +148,7 @@ public class Control {
                 trigger.get(decider(data.get(0))).dialog(s[1], data); // this is just smaller version
                 return true;
             case "search":
-                trigger.get(decider(data.get(0))).search(s[1],null,null); // this is just smaller version
+                trigger.get(decider(data.get(0))).search(s[1],data,bliz); // this is just smaller version
                 return true;
             case "inventory":
                 trigger.get(decider(data.get(0))).invent(l); // this is just smaller version

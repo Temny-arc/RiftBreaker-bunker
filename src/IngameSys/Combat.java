@@ -36,12 +36,13 @@ public class Combat {
             }
             combater.reducehp(c); // if enemy dies it will still attack
             System.out.println(c + " your dmg");
-            if (e.getDmgtype()> 1){
-                hp = hp -e.getDmgtype();//magic dmg
-            } else if (e.getDmgtype() == 0) {
-                hp = hp -(e.getDmgtype()/defence)-1;
+            if (combater.getDmgtype()> 1){
+                hp = hp -combater.getDmg();//magic dmg
+            } else if (combater.getDmgtype() == 0) {
+                System.out.println(combater.getDmg());
+                hp = hp -(combater.getDmg()/defence)-1;
             } else {
-                hp = hp -(e.getDmgtype()/defence);
+                hp = hp -(combater.getDmg()/defence);
             }
             System.out.println(hp+ " you " + combater.getHp() + " enemy");
         }

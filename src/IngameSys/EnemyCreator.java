@@ -69,6 +69,13 @@ public class EnemyCreator {
                 return new EnemyCreator("Frost Necromancer",15.0,15,2);
             case 6:
                 return new EnemyCreator("Frost Ravager",60.0,10,0);
+            case 7:
+                return new EnemyCreator("Crying Angel",32.0,6,2);
+            case 8:
+                return new EnemyCreator("Frost Psycho",10.0,30,0);
+            case 9:
+                return new EnemyCreator("Frost Revenant",120.0,30,0);
+
 
 
 
@@ -79,6 +86,6 @@ public class EnemyCreator {
 
 
 
-        return new EnemyCreator("below Natural",32.0,8,0);
+        return new EnemyCreator("BelowNatural",3200.0,50,2);
     }
 }
