@@ -125,4 +125,72 @@ experimentallab_item3a++;System is finally working now, we have managed to get s
 experimentallab_item3a++;After some attempts we have discovered some gateway on Thanaad7 there were some locals who defended that place. If we find how that thing works we can escalate our work here.
 experimentallab_item3a+++;The gateway is active. there is a issue that some frost enetities are moving from it. The place might have been their jail of some sort. but fortunately, looks like we will purge them.
 experimentallab_item3a++++;By using the materials from crop1 we have managed to create super-powerful ammo, but its so cost inefficient. There was an idea to forge some blade that could cut through any material like butter.
-experimentallab_item3a+++++;Frost enemies have overrun our base at Thanaad7 but, the data we got are good, so we
+experimentallab_item3a+++++;Frost enemies have overrun our base at Thanaad7 but, the data we got are good, so we dont have to take it back. Now we need to find more data or program vulcan is doomed
+experimentallab_item4?;There is some large machine on the left side of the room you can activate it.
+experimentallab_item4a;Systems are activating, it's a energy shield with some work you managed to fill entire base good job.
+manufactory_item0?;On the wall is pipe. it looks hot. there may be a way how to move that heat.
+manufactory_item0a;There are four valves. time for a puzzle.
+manufactory_item0a+;Once valves are set. You hear commander calling you. "what have you done you bastard hahaha really good job out there".
+manufactory_item1?;Forge looks intact you may be able to make some weapon.
+manufactory_item1+?;You managed to get the blueprint for a Mafia knife you can make it here.;This is Mafia Old Country knife
+manufactory_item1++?;There is some blueprint for a sword or katana. It looks durable, It's made of Glemium.;This is galaxy sword
+manufactory_item1+-?;There is also a different thing called heat seeking briefcase.;Hitman reference its one of the most insane items.
+manufactory_item1+++?;You can use the acid on the sword here to enhance its power but there is also a risk from damage;This is galaxy sword
+manufactory_item1a+;Once Mafia knife is done you can feel some force that directs you to trow it into any spot.;this is for its heat seeking or something
+manufactory_item1a++;The sword shines with pink color but, there is missing something in it. (blade also whispers: Consume)
+manufactory_item2?;There is some trash lying around. Once you look closer you see some fragments.
+manufactory_item2?;When the alarm started someone was forging a weapon but it was done too late to be useful, hopefully you dont meet the same fate.
+manufactory_item3?;Someone have radio here but why there are notes on it. some music can help
+manufactory_item3a;The note is for user its written: if someone turn this thing on everyone in the base will hear that. I will attempt to fix it soon. Hmm this can play songs to all base lets see what we have got here;
+manufactory_item3a+;The list of songs that you can play titled. I'm still standing, Fireworks, Rules of nature, Red sun, Subzero, In case of emergency play this; the songs give bonus value each does diferent scale frow best to worst: Subzero, Red sun, Firework, Rules of nature, I'm still standing and the last In case of emergency play this = I really want to stay at your house(it lowers your survival
+cryochamber_item0?;There is a stasis pod here. there is someone inside. You must find a way how to get him out.
+cryochamber_item0a+;Issue: The stasis pod is locked. there are some ways how to open it. You can solve a puzzle in order to open it. Find the switch.
+cryochamber_item0a-;Or you can use keycard that you have found;you need A card
+cryochamber_item0a++;Once the pod is open you hear someone talking that must be the person. It turns out to be a women. She introduce yourself as Alice. She will follow you around.woman woman woman
+cryochamber_item1?;There is some container on the far side of the room there is something flowing in it.
+cryochamber_item1a;When you walk close you see a tank. You behold an abomination, some sort of hybrid between human and frost monsters. Whoever done that has to pay.
+cryochamber_item2?;There is a medical cabinet on the wall close to you. some medical supplies may be inside.
+cryochamber_item2a;For a some reason the cabinet holds almost nothing, but there is something at least. it's a stimpack, in combat this may be worthy.
+cryochamber_item3?;There is some table with a data-tablet it can store useful intel
+cryochamber_item3a;We have old tech here its bad, but with a lot of patience, we have found that you can use sulfuric acid, you can dissolve all frost enemies, we will see if other works as well
+cryochamber_item3a+;After analysing items from crop1 we can confirm that local atmosphere is normal almost same as here. There is also a new material we decided to call it Riftium, its mix between gold and tungsten plus some silicic, its extremely durable but also light
+cryochamber_item3a++;We reached a breakthrough, Riftium is made by a plant it takes a lot of time to produce at least some of it.
+cryochamber_item3a+++;Riftium is amusing, it can merge with any acid or liquid and have a lot of variety what will happen, the most insane its with sulfuric acid because it will merge itself plus work like a normal acid. It can cut walls in half.
+cryochamber_item3a++++;David gave me a letter for Alice if to give it to her if he dies, now he is dead but I`m not sure. I love her too so what will happen. probably the best way is to keep it to myself.
+cryochamber_item4?;There is a cabinet its closed what if there is something in it?
+cryochamber_item4a;Well it is. now you need to fight a frost enemy FIGHT
+laboratory_item0?;There are some flasks on the ground, some of them are broken, yet some are still intact and there are some liquids inside.
+laboratory_item0a;Looks like some flasks have still name on themselves, One have name sulfuric acid, you took it with you.
+laboratory_item1?;Someone here have a computer. its look active. it may prove vise to scan it
+laboratory_item1a;Computer turns on. you can now reed the files inside. but lot of data are corupted.
+laboratory_item1a+;Frost data. from the portal was insane. Their architecture, culture, even knowledge is far superior.
+laboratory_item1a++;We have discovered something like a shrine, maybe a portal who knows, team has been dispatched to scan the area
+laboratory_item1a++;Looks like a vault, there are many arts around, some speak about heroic actions, some about the end maybe a prophecy
+laboratory_item1a+++;We have opened a path to vault there is some puzzle, Whomsoever takes up this blade shall wield power eternal. Just as the blade rends flesh, so must power scar the spirit. ;
+laboratory_item1a++++;Solution found we have opened it, but something is wrong, many frost entities have began swarming through the vault they are very resistant, but we need to know more
+laboratory_item1a+++++;There are something beyond our power, mostly there are thing called frost hero they are almost immune to our weapons we need to retreat.
+laboratory_item1a++++++;There is nothing less only corruption and some screams
+laboratory_item2?;There is some machine still running wonder why?
+laboratory_item2a;They call it fate spinner its an alien artefact from a planet you dont know, better not disturb it
+laboratory_item3?;On the floor is lying a corpse of a man. what if is something in his pockets
+laboratory_item3a;You found a keycard this one is pink and have  A B C D E letters there is also a director written on it
+laboratory_item4?;Why is here a gun turret you may want to investigate.
+laboratory_item4a;This weapon is a new MechTech shield it has multiple gun systems if someone can man it frost will have a bad time.
+controlroom_item0?;There is a server room curently offline you can activate it.
+controlroom_item0a;Systems go, AA guns active, searching for targets, firing now, all targets down.
+controlroom_items1-3?;There are three computers in here you can interact with each
+controlroom_item1a;Weapons control is here there are some systems here that can be useful one is auto-turrets, some rocket systems, and a shield
+controlroom_item2a;This looks like data fortress, you can access here some data from main servers
+controlroom_item2a+;The base is online we are now installing the portal, systems are working, there will be up to 20 people in here so small community im looking forward to it
+controlroom_item2a++;Scientist teams are working now, i have also noticed two people they look like in love, fortunately it will not endanger our mission
+controlroom_item2a+++;So we scouted about 30 worlds and yet no signs of some advance technology, but we discovered that if you add to a human some material they will gain power to manipulate objects
+controlroom_item2a++++;Project Vulcan is returning profit. On X28461256 we have found a large patch of gold and some other rare materials
+controlroom_item2a+++++;We are shutting this place down it's too dangerous, shit portal is activating who did that, Everyone go back retreat, turn back. We need th shut the portal down, or we are dead
+controlroom_item3a-;You have the card you can access some data here, portal is drawing the power from the reactor you can shut it down if you are in a hallway, first floor
+controlroom_item3a+;Here you can stay and skip time to end the game now and see the results there is no going back now
+controlroom_item3a-+;If you see this you can activate the last secret ending. have fun. and thank you.;you need to be here at turn 39
+controlroom_item3a+++;Alice come to you, why it has to be you but ok I sense some dark energy from the portal, we may be all dead soon so I want to say one last thing, I like you, but you will probably not sorry about saying it out loud
+controlroom_item3+a+;I love you too
+controlroom_item3+a-;Its normal for people to love someone
+controlroom_item3+a++;She replied: at least I will live free now, she hugs you, then suddenly you fly across the room. Im back
+controlroom_item3+a-;You see a large Frost enemy, breaking your people apart but then he began flying and dies same fate meet other enemies, its done time to return home

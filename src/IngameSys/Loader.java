@@ -107,8 +107,10 @@ public class Loader {
 
             while (s != null){
                 String b[] = s.split(";");
-                System.out.println(b[0]+" key");
-                loader.dialog.put(b[0],b[1]);
+                if (b.length>1) { // there was issue with empty lines
+                    System.out.println(b[0] + " key");
+                    loader.dialog.put(b[0], b[1]);
+                }
                 s = br.readLine();
             }
             return loader;
