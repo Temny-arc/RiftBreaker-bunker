@@ -66,7 +66,9 @@ public class Manufactory implements Commander {
             case "3":
                 System.out.println(text.get("manufactory_item3a"));
                 System.out.println(text.get("manufactory_item3a+"));
-
+                if (arg.equals("1")) {
+                    map.put(4, map.get(4)+1);
+                }
                 if (map.get(163) == 0) {
                     map.put(1, 1);
                 }
