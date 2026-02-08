@@ -13,6 +13,7 @@ public class Entrance implements Commander {
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
         map.replace(0,0);
+        System.out.println("moving to hallway");
         return map;
     }
 
@@ -22,25 +23,53 @@ public class Entrance implements Commander {
     }
 
     @Override
-    public int search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
-        Scanner sc = new Scanner(System.in);
-        if (arg.equals("0")){
-            System.out.println(text.get("enterance_item0?"));
-            String s = sc.next();
-            if (s.equals("0")){// selected outcome
+    public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        switch (arg) {
+            case "0":
                 System.out.println(text.get("enterance_item0a"));
-                map.replace(10,2); // get data that the area has been searched
-            } else if (s.equals("1")){// second outcome
-                System.out.println(text.get("enterance_item0?"));
-                map.replace(10,1); // area has been searched but item was not taken
-            } else {
+                if (map.get(31) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(31, 1);
+                return map;
+            case "1":
+                System.out.println(text.get("enterance_item1a"));
+                if (map.get(32) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(32, 1);
+                return map;
+            case "2":
+                System.out.println(text.get("enterance_item2a"));
+                if (map.get(33) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(33, 1);
+                return map;
+            case "3":
+                System.out.println(text.get("enterance_item3a"));
+                if (map.get(34) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(34, 1);
+                return map;
+            case "4":
+                System.out.println(text.get("enterance_item4a"));
+                if (map.get(35) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(35, 1);
+                return map;
+            case "5":
+                System.out.println(text.get("enterance_item5a"));
+                if (map.get(36) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(36, 1);
+                return map;
 
-            }
         }
-
-
-        return 0;
-
+        return map;
     }
 
     @Override
@@ -57,8 +86,8 @@ public class Entrance implements Commander {
     }
 
     @Override
-    public int help(String arg) {
-        return 0;
+    public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        return arg;
     }
 
 

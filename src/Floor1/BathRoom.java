@@ -23,12 +23,42 @@ public class BathRoom implements Commander {
     }
 
     @Override
-    public int search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+    public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        if (arg.equals("?")){ // if you only wrote search
+            arg = help("?",map,text); // calls for additional info that will be loaded
+        }
+        switch (arg) {
+            case "0":
+                System.out.println(text.get("bathroom_item0a") );
+                if (map.get(11)==0){
+                    map.put(1,1);
+                }
+                map.put(11,1);
+                return map;
+
+            case "1":
+                if (map.get(2)<6){ // If you are wondering what is this its a decider. you need to be in that room before some turn in order to save that guy
+                    System.out.println(text.get("bathroom_item1+"));
+
+                } else {
+                    System.out.println(text.get("bathroom_item1-"));
+                }
+                map.put(5,2);// 5 is for combat number is symbol for enemy
+                if (map.get(12)==0){
+                    map.put(1,1);// first time in here ?
+                }
+                return map;
+            case "2":
+                System.out.println(text.get("bathroom_item2a"));
+                if (map.get(13)==0){
+                    map.put(1,1);
+                }
+                map.put(13,1);
+                return map;
+        }
 
 
-
-
-        return 0;
+        return map;
     }
 
     @Override
@@ -45,8 +75,13 @@ public class BathRoom implements Commander {
     }
 
     @Override
-    public int help(String arg) {
-        //System.out.println(text.get(bathroom_item0));
-        return 0;
+    public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        if (arg.equals("?")){
+            System.out.println(text.get("bathroom_item0?"));
+            System.out.println(text.get("bathroom_item1?"));
+            System.out.println(text.get("bathroom_item2?"));
+        }
+
+        return arg;
     }
 }

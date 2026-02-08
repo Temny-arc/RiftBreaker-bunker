@@ -12,7 +12,9 @@ public class TechRooms implements Commander {
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
         //TODO here player needs to decide which one he wants to visit, he can also move directly to second tech room
-        map.replace(0,0);
+
+            map.replace(0, 0);
+
         return map;
     }
 
@@ -22,9 +24,54 @@ public class TechRooms implements Commander {
     }
 
     @Override
-    public int search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
-        //TODO decider where you are right now
-        return 0;
+    public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        //TODO there are no data for this room yet
+
+
+
+        if (map.get(1)== 60){ //
+            switch (arg) {
+                case "0":
+                    System.out.println(text.get("techrooma_item0a"));
+                    if (map.get(71) == 0) {
+                        map.put(1, 1);
+                    }
+                    map.put(71, 1);
+                    return map;
+                case "1":
+                    System.out.println(text.get("techrooma_item1a"));
+                    if (map.get(72) == 0) {
+                        map.put(1, 1);
+                    }
+                    map.put(72, 1);
+                    return map;
+                case "2":
+                    System.out.println(text.get("techrooma_item2a"));
+                    if (map.get(23) == 0) {
+                        map.put(1, 1);
+                    }
+                    map.put(73, 1);
+                    return map;
+                case "3":
+                    System.out.println(text.get("techrooma_item3a"));
+                    if (map.get(74) == 0) {
+                        map.put(1, 1);
+                    }
+                    map.put(74, 1);
+                    return map;
+
+            }
+        }else {
+            System.out.println(text.get("techrooma_item1a"));
+        }
+
+
+
+
+
+
+
+        return map;
     }
 
     @Override
@@ -41,7 +88,7 @@ public class TechRooms implements Commander {
     }
 
     @Override
-    public int help(String arg) {
-        return 0;
+    public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        return arg;
     }
 }

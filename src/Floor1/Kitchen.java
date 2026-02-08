@@ -7,6 +7,7 @@ import IngameSys.loadmode.Weapon;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Kitchen implements Commander {
     //TODO exact same as before
@@ -22,8 +23,68 @@ public class Kitchen implements Commander {
     }
 
     @Override
-    public int search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
-        return 0;
+    public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        Scanner sc = new Scanner(System.in);
+        switch (arg) {
+            case "0":
+                System.out.println(text.get("kitchen_item0a"));
+                if (map.get(51) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(51, 1);
+                return map;
+            case "1":
+                System.out.println(text.get("kitchen_item1a"));
+                if (map.get(52) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(52, 1);
+                return map;
+            case "2":
+                System.out.println(text.get("kitchen_item2a"));
+                if (map.get(53) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(53, 1);
+                return map;
+            case "3":
+                System.out.println(text.get("kitchen_item3a"));
+                if (map.get(54) == 0) {
+                    map.put(1, 1);
+                }
+                arg = sc.next();
+                if (arg.equals("1")) { // this is for the data bus because there is too much text
+                    System.out.println(text.get("bedroom_item1+"));
+                    System.out.println(text.get("bedroom_item1++"));
+                    System.out.println(text.get("bedroom_item1+++"));
+                    System.out.println(text.get("bedroom_item1++++"));
+                    map.put(54,2);
+                }
+                map.put(54, 1);
+                return map;
+            case "4":
+                System.out.println(text.get("kitchen_item3a"));
+                if (map.get(55) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(55, 1);
+                return map;
+            case "5":
+                System.out.println(text.get("kitchen_item4a"));
+                if (map.get(56) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(56, 1);
+                return map;
+            case "6":
+                System.out.println(text.get("kitchen_item5a"));
+                if (map.get(57) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(57, 1);
+                return map;
+        }
+        return map;
     }
 
     @Override
@@ -40,7 +101,7 @@ public class Kitchen implements Commander {
     }
 
     @Override
-    public int help(String arg) {
-        return 0;
+    public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        return arg;
     }
 }

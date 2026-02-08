@@ -154,7 +154,7 @@ public class Control {
                 trigger.get(decider(data.get(0))).invent(l); // this is just smaller version
                 return true;
             case "help":
-                trigger.get(decider(data.get(0))).help(s[1]); // this is just smaller version
+                trigger.get(decider(data.get(0))).help(s[1],data,bliz); // this is just smaller version
                 return true;
         }
         return false;

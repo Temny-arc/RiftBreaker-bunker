@@ -7,6 +7,7 @@ import IngameSys.loadmode.Weapon;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class CableOperator implements Commander {
     //TODO exactly same as before
@@ -22,8 +23,44 @@ public class CableOperator implements Commander {
     }
 
     @Override
-    public int search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
-        return 0;
+    public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        Scanner sc = new Scanner(System.in);
+        switch (arg) {
+            case "0":
+                System.out.println(text.get("cableoperator_item0a"));
+                if (map.get(111) == 0) {
+                    map.put(1, 1);
+                }
+                arg = sc.next();
+                if (arg.equals("1")) {
+                    System.out.println(text.get("cableoperator_item1+"));
+                    System.out.println(text.get("cableoperator_item1++"));
+                    System.out.println(text.get("cableoperator_item1+++"));
+                    System.out.println(text.get("cableoperator_item1++++"));
+                    map.put(112, 2);
+                } else {
+                    map.put(111, 1);
+                }
+                return map;
+                /* its for a reason the map dont have more data now
+            case "1":
+                System.out.println(text.get("enterance_item1a"));
+                if (map.get(22) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(22, 1);
+                return map;
+            case "2":
+                System.out.println(text.get("enterance_item2a"));
+                if (map.get(23) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(23, 1);
+                return map;
+
+                 */
+        }
+            return map;
     }
 
     @Override
@@ -40,7 +77,7 @@ public class CableOperator implements Commander {
     }
 
     @Override
-    public int help(String arg) {
-        return 0;
+    public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        return arg;
     }
 }

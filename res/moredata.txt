@@ -59,8 +59,9 @@ bedroom_item4a;Interesting, in the bottom of the crate is shotgun also ammo. the
 bedroom_item5a;Someone decided to use his stash as botanist supply. now it looks more like spoilage, there is also note Gleba on it.
 bathroom_item0?;You notice a small card in the sink
 bathroom_item0a;It turns out to be a blue keycard. Interesting is that its color is blue and has A and C on it.
-bathroom_item1?;When you look to the shower. You notice a man being cornered by a frost creature FIGHT !!
-bathroom_item1-?;When you look to the shower. You notice a dead body and some thing made of frost FIGHT !!
+bathroom_item1?;There are some noises in the shower.
+bathroom_item1+;When you look to the shower. You notice a man being cornered by a frost creature FIGHT !!
+bathroom_item1-;When you look to the shower. You notice a dead body and some thing made of frost FIGHT !!
 bathroom_item1a;Men replied thank you. And then ask who you are you replied: I m searching for a safe spot.
 bathroom_item1a-;Body contained almost nothing exept a note turn on the f****** generator.
 bathroom_item2?;There is a interesting locker on the side. do you want to open it.
@@ -139,7 +140,7 @@ manufactory_item1+++?;You can use the acid on the sword here to enhance its powe
 manufactory_item1a+;Once Mafia knife is done you can feel some force that directs you to trow it into any spot.;this is for its heat seeking or something
 manufactory_item1a++;The sword shines with pink color but, there is missing something in it. (blade also whispers: Consume)
 manufactory_item2?;There is some trash lying around. Once you look closer you see some fragments.
-manufactory_item2?;When the alarm started someone was forging a weapon but it was done too late to be useful, hopefully you dont meet the same fate.
+manufactory_item2a;When the alarm started someone was forging a weapon but it was done too late to be useful, hopefully you dont meet the same fate.
 manufactory_item3?;Someone have radio here but why there are notes on it. some music can help
 manufactory_item3a;The note is for user its written: if someone turn this thing on everyone in the base will hear that. I will attempt to fix it soon. Hmm this can play songs to all base lets see what we have got here;
 manufactory_item3a+;The list of songs that you can play titled. I'm still standing, Fireworks, Rules of nature, Red sun, Subzero, In case of emergency play this; the songs give bonus value each does diferent scale frow best to worst: Subzero, Red sun, Firework, Rules of nature, I'm still standing and the last In case of emergency play this = I really want to stay at your house(it lowers your survival

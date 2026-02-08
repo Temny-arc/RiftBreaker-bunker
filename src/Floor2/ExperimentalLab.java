@@ -7,6 +7,7 @@ import IngameSys.loadmode.Weapon;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class ExperimentalLab implements Commander {
     //TODO exactly same as before
@@ -26,8 +27,65 @@ public class ExperimentalLab implements Commander {
     }
 
     @Override
-    public int search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
-        return 0;
+    public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        if (arg.equals("?")) { // if you only wrote search
+            arg = help("?", map, text); // calls for additional info that will be loaded
+        }
+        Scanner sc = new Scanner(System.in);
+        switch (arg) {
+            case "0":
+                System.out.println(text.get("experimentallab_item0a"));
+                if (map.get(141) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(141, 1);
+                return map;
+            case "1":
+                System.out.println(text.get("experimentallab_item3a"));
+                if (map.get(142) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(23, 1);
+                return map;
+
+            case "2":
+                System.out.println(text.get("experimentallab_item2a"));
+                if (map.get(141) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(143, 1);
+                return map;
+            case "3":
+                System.out.println(text.get("experimentallab_item1a"));
+                arg = sc.next();
+                if (map.get(144) == 0) {
+                    map.put(1, 1);
+                }
+                if (arg.equals("1")) { // this is for the data bus because there is too much text
+                    System.out.println(text.get("experimentallab_item1+"));
+                    System.out.println(text.get("experimentallab_item1++"));
+                    System.out.println(text.get("experimentallab_item1+++"));
+                    System.out.println(text.get("experimentallab_item1++++"));
+                    map.put(144,2);
+                }
+                map.put(144, 1);
+                return map;
+            case "4":
+                System.out.println(text.get("experimentallab_item3a"));
+                if (map.get(144) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(1444, 1);
+                return map;
+
+        }
+
+
+
+
+
+
+        return map;
     }
 
     @Override
@@ -44,7 +102,7 @@ public class ExperimentalLab implements Commander {
     }
 
     @Override
-    public int help(String arg) {
-        return 0;
+    public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        return arg;
     }
 }

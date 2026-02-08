@@ -7,6 +7,7 @@ import IngameSys.loadmode.Weapon;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Cryochamber implements Commander {
 
@@ -28,8 +29,60 @@ public class Cryochamber implements Commander {
     }
 
     @Override
-    public int search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
-        return 0;
+    public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        Scanner sc = new Scanner(System.in);
+        switch (arg) {
+            case "0":
+                System.out.println(text.get("cryochamber_item0a+"));
+                if (map.get(13)!=0){
+                    System.out.println(text.get("cryochamber_item0a-"));
+                }
+                //TODO build a puzzle now lets assume you have done it
+                System.out.println(text.get("cryochamber_item0a++"));
+                if (map.get(131) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(131, 1);
+                return map;
+            case "1":
+                System.out.println(text.get("cryochamber_item1a"));
+                if (map.get(132) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(132, 1);
+                return map;
+            case "2":
+                System.out.println(text.get("cryochamber_item2a"));
+                if (map.get(133) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(133, 1);
+                return map;
+            case "3":
+                System.out.println(text.get("cryochamber_item3a"));
+                arg = sc.next();
+                if (map.get(134) == 0) {
+                    map.put(1, 1);
+                }
+                if (arg.equals("1")) {
+                    System.out.println(text.get("cryochamber_item1+"));
+                    System.out.println(text.get("cryochamber_item1++"));
+                    System.out.println(text.get("cryochamber_item1+++"));
+                    System.out.println(text.get("cryochamber_item1++++"));
+                    map.put(134, 2);
+                } else {
+                    map.put(134, 1);
+                }
+                return map;
+            case "4":
+                System.out.println(text.get("cryochamber_item4a"));
+                if (map.get(135) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(135, 1);
+                return map;
+        }
+         return map;
     }
 
     @Override
@@ -46,7 +99,7 @@ public class Cryochamber implements Commander {
     }
 
     @Override
-    public int help(String arg) {
-        return 0;
+    public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        return arg;
     }
 }

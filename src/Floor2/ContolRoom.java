@@ -7,6 +7,7 @@ import IngameSys.loadmode.Weapon;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class ContolRoom implements Commander {
     //TODO exactly same as before(Operation ice is nice)
@@ -26,8 +27,44 @@ public class ContolRoom implements Commander {
     }
 
     @Override
-    public int search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
-        return 0;
+    public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        Scanner sc = new Scanner(System.in);
+        switch (arg) {
+            case "0":
+                System.out.println(text.get("controlroom_item0a"));
+                if (map.get(121) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(121, 1);
+                return map;
+            case "1":
+                System.out.println(text.get("controlroom_item1a"));
+                arg = sc.next();
+                if (map.get(121) == 0) {
+                    map.put(1, 1);
+                }
+                if (arg.equals("1")) { // this is for the data bus because there is too much text
+                    System.out.println(text.get("bedroom_item2+"));
+                    System.out.println(text.get("bedroom_item2++"));
+                    System.out.println(text.get("bedroom_item2+++"));
+                    System.out.println(text.get("bedroom_item2++++"));
+                    System.out.println(text.get("bedroom_item2+++++"));
+                    map.put(121,2);
+                }
+                return map;
+            case "2":
+                if (map.get(154) != 0) { // allow secret ending dont fear the reaper
+                    System.out.println(text.get("controlroom_item3a-"));
+                    map.put(8, 1); // have fun
+                }
+                System.out.println(text.get("controlroom_item3a+"));
+                if (map.get(2)== 39 & map.get(131)!=0) { // trigger for secret ending
+                    System.out.println(text.get("controlroom_item3a-+"));
+                }
+                //TODO complete game ending
+
+        }
+        return map;
     }
 
     @Override
@@ -44,7 +81,7 @@ public class ContolRoom implements Commander {
     }
 
     @Override
-    public int help(String arg) {
-        return 0;
+    public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        return arg;
     }
 }

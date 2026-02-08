@@ -15,11 +15,9 @@ public class Main {
         System.out.println("Items: " + data.items.size())
 
          */
-        //Control c = new Control();
-        //c.director();
-        Player p = new Player("corso",0,300,12,12);
-        Combat c = new Combat();
-        c.fight(9,p);
+        Control c = new Control();
+        c.director();
+        
 
     }
 }

@@ -40,7 +40,7 @@ public interface Commander {
      */
     public HashMap<Integer,Integer> dialog(String arg,HashMap<Integer,Integer> map);
 
-    public int search(String arg,HashMap<Integer,Integer> map,HashMap<String,String> text);
+    public HashMap<Integer,Integer> search(String arg,HashMap<Integer,Integer> map,HashMap<String,String> text);
 
     /**
      * due to the setup invent will do same thing everywhere so: sad face, still it would need a class not abstract not interface but a true class
@@ -49,7 +49,14 @@ public interface Commander {
      */
     public int invent(Loader li);
 
-    public int help(String arg);
+    /**
+     * help will do two things 1 is help player orient in the room, the second the command help
+     * @param arg what part should be called
+     * @param data some texts you access may need a data to bee seen
+     * @param text info about data in the rooms
+     * @return returns the instruction what is method supposed to do
+     */
+    public String help(String arg,HashMap<Integer,Integer> data,HashMap<String,String> text);
 
 
 }

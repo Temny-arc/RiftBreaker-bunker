@@ -28,8 +28,37 @@ public class Stairs implements Commander {
     }
 
     @Override
-    public int search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
-        return 0;
+    public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        /*
+        switch (arg) {
+            case "0":
+                System.out.println("_item0a");
+                if (map.get(61) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(21, 1);
+                return map;
+            case "1":
+                System.out.println("enterance_item1a");
+                if (map.get(22) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(22, 1);
+                return map;
+            case "2":
+                System.out.println("enterance_item2a");
+                if (map.get(23) == 0) {
+                    map.put(1, 1);
+                }
+                map.put(23, 1);
+                return map;
+
+
+        }
+
+         */
+        System.out.println();
+        return map;
     }
 
     @Override
@@ -46,7 +75,7 @@ public class Stairs implements Commander {
     }
 
     @Override
-    public int help(String arg) {
-        return 0;
+    public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        return arg;
     }
 }

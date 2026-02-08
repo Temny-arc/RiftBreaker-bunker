@@ -43,15 +43,6 @@ public class Hallway implements Commander {
             }
         }
 
-
-
-
-
-
-
-
-
-
         return map;
     }
 
@@ -62,9 +53,30 @@ public class Hallway implements Commander {
     }
 
     @Override
-    public int search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
-        //TODO if there is something from event allow triggering
-        return 0;
+    public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        switch (arg) {
+            case "0":
+                System.out.println(text.get("hallway_item0a"));
+                if (map.get(41) == 0) {
+                    map.put(1, 1);
+                }
+                return map;
+            case "1":
+                if (map.get(8) == 1) {// safety trigger
+                    System.out.println(text.get("hallway_item1a"));
+                    System.out.println(text.get("hallway_item1a+"));
+                    System.out.println(text.get("hallway_item1a+-"));
+                    System.out.println(text.get("hallway_item1a+++"));
+                    System.out.println(text.get("hallway_item1a++-"));
+                    System.out.println(text.get("hallway_item1a++++"));
+
+                    map.put(2, 40);// trigger the end
+                    map.put(1, 4); // for the second cycle
+                    map.put(42, 1); // time to party like its 2023
+                    return map;
+                }
+        }
+        return map;
     }
 
     @Override
@@ -81,8 +93,8 @@ public class Hallway implements Commander {
     }
 
     @Override
-    public int help(String arg) {
+    public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
         //TODO info player to move
-        return 0;
+        return arg;
     }
 }
