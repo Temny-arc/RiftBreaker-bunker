@@ -1,7 +1,4 @@
-import IngameSys.Combat;
-import IngameSys.Control;
-import IngameSys.Loader;
-import IngameSys.Player;
+import IngameSys.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -15,9 +12,12 @@ public class Main {
         System.out.println("Items: " + data.items.size())
 
          */
+        /*
         Control c = new Control();
         c.director();
-        
+        */
+        decode d = new decode();
+        d.puzzle("13254");
 
     }
 }
