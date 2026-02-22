@@ -2,6 +2,7 @@ package Floor2;
 
 import IngameSys.Commander;
 import IngameSys.Loader;
+import IngameSys.decode;
 import IngameSys.loadmode.Item;
 import IngameSys.loadmode.Weapon;
 
@@ -30,6 +31,9 @@ public class Cryochamber implements Commander {
 
     @Override
     public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        if (arg.equals("?")) {
+            arg = help("?", map, text);
+        }
         Scanner sc = new Scanner(System.in);
         switch (arg) {
             case "0":
@@ -37,7 +41,8 @@ public class Cryochamber implements Commander {
                 if (map.get(13)!=0){
                     System.out.println(text.get("cryochamber_item0a-"));
                 }
-                //TODO build a puzzle now lets assume you have done it
+                decode d = new decode();
+                d.puzzle("12344");// the ultimate passcode
                 System.out.println(text.get("cryochamber_item0a++"));
                 if (map.get(131) == 0) {
                     map.put(1, 1);
@@ -100,6 +105,15 @@ public class Cryochamber implements Commander {
 
     @Override
     public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        Scanner sc = new Scanner(System.in);
+        if (arg.equals("?")){
+            System.out.println(text.get("cryochamber_item0?"));
+            System.out.println(text.get("cryochamber_item1?"));
+            System.out.println(text.get("cryochamber_item2?"));
+            System.out.println(text.get("cryochamber_item3?"));
+            System.out.println(text.get("cryochamber_item4?"));
+            return sc.nextLine();
+        }
         return arg;
     }
 }

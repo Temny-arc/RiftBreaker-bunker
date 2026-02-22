@@ -7,6 +7,7 @@ import IngameSys.loadmode.Weapon;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class BathRoom implements Commander {
 
@@ -56,7 +57,7 @@ public class BathRoom implements Commander {
                 map.put(13,1);
                 return map;
         }
-
+        System.out.println("system error cannot find proper dialog");
 
         return map;
     }
@@ -76,12 +77,14 @@ public class BathRoom implements Commander {
 
     @Override
     public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        Scanner sc = new Scanner(System.in);
         if (arg.equals("?")){
             System.out.println(text.get("bathroom_item0?"));
             System.out.println(text.get("bathroom_item1?"));
             System.out.println(text.get("bathroom_item2?"));
+            return sc.nextLine();
         }
-
         return arg;
+
     }
 }

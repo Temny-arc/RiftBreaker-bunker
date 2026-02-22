@@ -7,6 +7,7 @@ import IngameSys.loadmode.Weapon;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class TechRooms implements Commander {
     @Override
@@ -25,11 +26,13 @@ public class TechRooms implements Commander {
 
     @Override
     public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
-        //TODO there are no data for this room yet
+
+        if (arg.equals("?")) {
+            arg = help("?", map, text);
+        }
 
 
-
-        if (map.get(1)== 60){ //
+        if (map.get(0)== 60){ //
             switch (arg) {
                 case "0":
                     System.out.println(text.get("techrooma_item0a"));
@@ -62,7 +65,13 @@ public class TechRooms implements Commander {
 
             }
         }else {
-            System.out.println(text.get("techrooma_item1a"));
+            System.out.println(text.get("techrooma_item0a"));
+            if (map.get(81) == 0) {
+                map.put(1, 1);
+            }
+            map.put(81, 1);
+            return map;
+            //todo add more data to the tech room b
         }
 
 
@@ -89,6 +98,20 @@ public class TechRooms implements Commander {
 
     @Override
     public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+
+        Scanner sc = new Scanner(System.in);
+        if (arg.equals("?")){
+            if (data.get(0)== 5) {
+                System.out.println(text.get("techrooma_item0?"));
+                System.out.println(text.get("techrooma_item1?"));
+                System.out.println(text.get("techrooma_item2?"));
+                System.out.println(text.get("techrooma_item3?"));
+                return sc.nextLine();
+            } else if (data.get(60)!= 0) {
+                System.out.println(text.get("techroomb_item0?"));
+            }
+        }
         return arg;
+
     }
 }

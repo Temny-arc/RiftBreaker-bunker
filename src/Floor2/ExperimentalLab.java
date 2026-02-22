@@ -103,6 +103,15 @@ public class ExperimentalLab implements Commander {
 
     @Override
     public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        Scanner sc = new Scanner(System.in);
+        if (arg.equals("?")){
+            System.out.println(text.get("experimentallab_item0?"));
+            System.out.println(text.get("experimentallab_item1?"));
+            System.out.println(text.get("experimentallab_item2?"));
+            System.out.println(text.get("experimentallab_item3?"));
+            System.out.println(text.get("experimentallab_item4?"));
+            return sc.nextLine();
+        }
         return arg;
     }
 }

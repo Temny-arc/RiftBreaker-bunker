@@ -2,6 +2,7 @@ package Floor2;
 
 import IngameSys.Commander;
 import IngameSys.Loader;
+import IngameSys.decode;
 import IngameSys.loadmode.Item;
 import IngameSys.loadmode.Weapon;
 
@@ -38,22 +39,25 @@ public class Manufactory implements Commander {
                 if (map.get(161) == 0) {
                     map.put(1, 1);
                 }
+                decode d = new decode();
+                d.puzzle("31234");
                 map.put(161, 1);
                 return map;
             case "1":
                 System.out.println(text.get("manufactory_item1a"));
-                arg = sc.next();
-
-                map.put(1, 1);
-
-                if (arg.equals("1")) { // this is for the data bus because there is too much text
-                    //TODO triggering
-                    System.out.println(text.get("manufactory_item1+?"));
+                    if (map.get(101) == 1) {
+                        System.out.println(text.get("manufactory_item1+?"));
+                    }
                     System.out.println(text.get("manufactory_item1++?"));
                     System.out.println(text.get("manufactory_item1+-?"));
-                    System.out.println(text.get("manufactory_item1+++?"));
-                    map.put(162, 2);
-                }
+                    if (map.get(151)!=0) {
+                        System.out.println(text.get("manufactory_item1a++?"));
+                    }
+                arg = sc.nextLine();
+                    //TODO create more weapons
+                            System.out.println(text.get("manufactory_item0a"));
+
+
                 map.put(162, 1);
                 return map;
             case "2":

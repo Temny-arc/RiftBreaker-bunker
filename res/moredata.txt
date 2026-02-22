@@ -79,8 +79,8 @@ kitchen_item3a++;"Frost-Hunter" is refered for beeing identical with cave men. H
 kitchen_item3a+++;"Frost-Necromancer" also known as Summoner creates other frost enemies he probably also controls them so killing one can have huge Impact on others. He himself is weak but since he is protected by others its always strong foe.
 kitchen_item3a++++;Frost-Spirit: we expect to be a leader of the Frost people, yet we are not sure if its some mental connection or Person behind it all. if you ever encounter him, know that he can be defeated by huge power only.
 kitchen_item4?;There is a stack of paper. It can be searched to gain some info.
-kitchen_item5a;Some papers are reports from other people, one cathed your eye titled: If MechTech fine what we are doing here we are screwed. Do you want to read the whole article?
-kitchen_item5a+;If they find out we are using a portal they will send entire army to wipe this place of the map. One day we will need to escape this place. If that happens project Vulcan will need to continue elsewhere.
+kitchen_item4a;Some papers are reports from other people, one cathed your eye titled: If MechTech fine what we are doing here we are screwed. Do you want to read the whole article?
+kitchen_item4a+;If they find out we are using a portal they will send entire army to wipe this place of the map. One day we will need to escape this place. If that happens project Vulcan will need to continue elsewhere.
 techrooma_item0?;Looks like someone have lot of storage data here. There is also a button that is blinking, titled restart. do you want to press it.
 techrooma_item0a;Once you press it. You hear a women voice. Hello how can I help today. This must be an AI for the complex. You can now talk to AI using dialog.
 techrooma_item1?;There is a orange card on the table do you want to pick it?
@@ -90,13 +90,25 @@ techrooma_item2a;Once you swipe a card. AI talked about. Defensive turret being 
 techrooma_item2a+;Once you swipe a card nothing happens. AI mentioned you need a D card to activate it.
 techrooma_item3?;There is temperature controller on the wall. Since the frost enemy are frozen it can weaken them.
 techrooma_item3a;Something wierd happens. Temperature falls. when you try to return it back nothing happens ; Its for the reactor down there It weakens foe there
-techroomb_item0;Doors look locked. they will need power to open them. But the complex dont have almost any. You need to find a power source to open it.
+techroomb_item0-;Doors look locked. they will need power to open them. But the complex dont have almost any. You need to find a power source to open it.
+techroomb_item0+;Doors are open you can now enter.
+techroomb_item1+;Someone had a shop there. some useful items may be found here
 stairs_item;Doors lead into the reactor. If you want to help others you best start here. are you ready
 stairs_items?;Reactor looks by readings normal but there is something that is reducing its power. When you walk closer you see a Frost enemy with a staff. Its a necromancer.
 stairs_items+?;So what to do you must kill it the easiest method is to overload reactor and burn that thing, but you will lose access here. You can also challenge him and kill him yourself
-stairs_itemsa;Due reactor overload area is no longer accessible.
+stairs_itema-;Due reactor overload area is no longer accessible.
+stairs_itema+;You can enter now.
+stairs_item0?;Below you is a large stockpile of ice, why?
+stairs_item0a;Its a water generator, for a some reason room is also making some rocket fuel than burn it.
+stairs_item1?;There is a large furnace, but there is something stuck inside of it.
+stairs_item1a;Inside is a blade its hot. there is no way someone can take it out;have fun this is Sam`s family blade so dont fear the reaper will contain it
+stairs_item2?;You see a control device at the reactor. can you use it?
+stairs_item2a;It allows to increase the temperature of the base, only for some time tho.
+stairs_item3?;Someone wrote some words on the wall
+stairs_item3a;All looks same but the writing is bad if you read it correctly then all is Gleba so it looks like Gleba gleba gleba gleba gleba gleba gleba gleba gleba gleba gleba gleba gleba gleba gleba gleba gleba gleba gleba gleba gleba...
 stairs_moveup-;Doors are magnetic. it will need power to open them. There must be reactor. nearby
 stairs_moveup+;Doors can be opened. IA alerted you: Large amount of enemies are present in next floor exercise caution.
+stairs_movedown;You moved down
 cablecar_item;There is a cable car. This can evacuate you to safety but there is a problem its broken. New objective fix Cable car.
 cablecar_item0?;On the wall is a blueprint, some technology can prove useful
 cablecar_item0a;Its a knife blueprint. Title Mafia Old Country knife. description mentions about this thing is able to pass through solid objects to hit its target.; based on video I broke MAFIA: The Old Country (I'm sorry) In czech: Rozbil jsem MAFIA: Domovina (Omlouvám se)
@@ -105,12 +117,14 @@ cablecar_item1a;By using fixing equipment motor looks good to go.;Its located in
 cablecar_item2?;The exit route is blocked by snow. You need to find a way how to open it.
 cablecar_item2a;Alice was capable to remove the barrier so the path is clear.
 cableoperator_items?;This is a place that will allow you operate Cable car. The only thing here is the control is missing.
-cableoperator_item0?;There is a computer do you want to read files in it.;This is Davids Computer so have fun
-cableoperator_item0a;Log1: Why I got this room, Im here alone but director mentioned something about secret research. I will be working on other planets. I cant just believe it.
-cableoperator_item0a+;Log2: I talked with John about our game. He told me its halfway done i believe we are much slower than expected. Also John having his youtube channel that he have to upload in sad.
-cableoperator_item0a++;Log3: I like some girl here. what was her name? dunno, anyway i asked her for a date in some game John gave me some tips what to do, he have a lot of experience. We will see tomorrow.
-cableoperator_item0a+++;Log4: First and second step was easy, but third was hard. It took a lot of time, but I believe she enjoyed it. But I guess she dont like me. Like why is she always avoiding me.
-cableoperator_item0a++++;Log5: This will be my last log here but there is no way we will all return from there. I gave Steve love letter that he is supposed to deliver if I die there. But if i die i will with get away from me David.; note Get Away from me John
+cableoperator_item0?;You see a poster on the wall you could look at it.
+cableoperator_item0a;Its a poster of some girl but you cant remember who is she, tho there is written BethyVA ; get away from me john
+cableoperator_item1?;There is a computer do you want to read files in it.;This is Davids Computer so have fun
+cableoperator_item1a;Log1: Why I got this room, Im here alone but director mentioned something about secret research. I will be working on other planets. I cant just believe it.
+cableoperator_item1a+;Log2: I talked with John about our game. He told me its halfway done i believe we are much slower than expected. Also John having his youtube channel that he have to upload in sad.
+cableoperator_item1a++;Log3: I like some girl here. what was her name? dunno, anyway i asked her for a date in some game John gave me some tips what to do, he have a lot of experience. We will see tomorrow.
+cableoperator_item1a+++;Log4: First and second step was easy, but third was hard. It took a lot of time, but I believe she enjoyed it. But I guess she dont like me. Like why is she always avoiding me.
+cableoperator_item1a++++;Log5: This will be my last log here but there is no way we will all return from there. I gave Steve love letter that he is supposed to deliver if I die there. But if i die i will with get away from me David.; note Get Away from me John
 experimentallab_item0?;On the wall you see a lot of holes. This may help you understand what is going on here
 experimentallab_item0a;For a unknown reason some holes are hot still. they more look like cold magma. Whatever they were doing here was dangerous.
 experimentallab_item1?;There are some polystyrene statues, but parts of them are on the ground.
@@ -133,6 +147,7 @@ manufactory_item0?;On the wall is pipe. it looks hot. there may be a way how to 
 manufactory_item0a;There are four valves. time for a puzzle.
 manufactory_item0a+;Once valves are set. You hear commander calling you. "what have you done you bastard hahaha really good job out there".
 manufactory_item1?;Forge looks intact you may be able to make some weapon.
+manufactory_item1a;Here is a list of items you can make:
 manufactory_item1+?;You managed to get the blueprint for a Mafia knife you can make it here.;This is Mafia Old Country knife
 manufactory_item1++?;There is some blueprint for a sword or katana. It looks durable, It's made of Glemium.;This is galaxy sword
 manufactory_item1+-?;There is also a different thing called heat seeking briefcase.;Hitman reference its one of the most insane items.
@@ -195,3 +210,15 @@ controlroom_item3+a+;I love you too
 controlroom_item3+a-;Its normal for people to love someone
 controlroom_item3+a++;She replied: at least I will live free now, she hugs you, then suddenly you fly across the room. Im back
 controlroom_item3+a-;You see a large Frost enemy, breaking your people apart but then he began flying and dies same fate meet other enemies, its done time to return home
+basic_dialog0?-;There isn't anyone to talk to
+basic_dialog0?+;What do you know about this room?
+ending_bad:;Capitan stood on a rock witnessing a foe much stronger that he can handle. Entire unit was massacred by them, soon they took the building and turned it into a fortress
+ending_bad+;After base saw what was going on they sent entire army to purge those monsters, many warriors met their end, but at least the threat is gone. Is it?
+ending_neutral;Cable car was fully operational co commander sent as many people he could spare to be evacuated, rest gave their life to buy them time and it was enough     Hi im surpised you lost, but hopefully you will replay this and win this oke?
+ending_neutral+;Many made it out alive, Survivors are sent back into the base camp while troops went for the attack, thanks to the info from them frost creatures didnt stand a chance. In the end the will be a funeral for the deeds of commander and the rest who gave their lives to save rest.         Hello there  you won, but do you think this is the best ending. you can try again
+ending_bitter;Frost Spirit apeared from the portal, thanks to the overwhelming firepower and tactical advantage, he is killed but took some warriors down, later they found your body. Funeral was good, you died so they were capable to live. Congratulation you won.
+ending_good;You see alert. Warning a large frost creature has been detected. main enterace is closed, so you look out of the window to see the chaos. Massive frost creature that is probably the Frost Spirit beeing annihilated by commander.
+ending_good+;Later you see that some didnt make it out alive but most did, now the journey have started.     You have reached the good ending but this isn't the only end here maybe there is a way how to save everyone?
+ending_love;Alice stops, then suddenly you faint away, after some time you wake up in the hospital, while there are some people there you see a smile
+ending_love;Well well well, I hope you didn't expect this, I believe we have made it thanks to you and Alice, so my natural assumption is to give you two some time alone, Alr boys move out
+ending_love;I thank you to help me find myself there, my reward will be large but now lets keep it as this: she kissed you      Ok gg you won and got a girlfriend or smt, Gleba

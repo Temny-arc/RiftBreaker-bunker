@@ -24,6 +24,9 @@ public class Kitchen implements Commander {
 
     @Override
     public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        if (arg.equals("?")) {
+            arg = help("?", map, text);
+        }
         Scanner sc = new Scanner(System.in);
         switch (arg) {
             case "0":
@@ -71,18 +74,13 @@ public class Kitchen implements Commander {
                 return map;
             case "5":
                 System.out.println(text.get("kitchen_item4a"));
+                System.out.println(text.get("kitchen_item4a+"));
                 if (map.get(56) == 0) {
                     map.put(1, 1);
                 }
                 map.put(56, 1);
                 return map;
-            case "6":
-                System.out.println(text.get("kitchen_item5a"));
-                if (map.get(57) == 0) {
-                    map.put(1, 1);
-                }
-                map.put(57, 1);
-                return map;
+
         }
         return map;
     }
@@ -102,6 +100,16 @@ public class Kitchen implements Commander {
 
     @Override
     public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+
+        Scanner sc = new Scanner(System.in);
+        if (arg.equals("?")){
+            System.out.println(text.get("kitchen_item0?"));
+            System.out.println(text.get("kitchen_item1?"));
+            System.out.println(text.get("kitchen_item2?"));
+            System.out.println(text.get("kitchen_item3?"));
+            System.out.println(text.get("kitchen_item4?"));
+            return sc.nextLine();
+        }
         return arg;
     }
 }

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class CableCar implements Commander {
-    //TODO exactly same as before
+
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
         if (arg.equals("experimentallab")){
@@ -27,6 +27,9 @@ public class CableCar implements Commander {
 
     @Override
     public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        if (arg.equals("?")) {
+            arg = help("?", map, text);
+        }
         switch (arg) {
             case "0":
                 System.out.println(text.get("cablecar_item0a"));

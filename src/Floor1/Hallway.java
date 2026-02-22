@@ -7,6 +7,7 @@ import IngameSys.loadmode.Weapon;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Hallway implements Commander {
 
@@ -54,6 +55,9 @@ public class Hallway implements Commander {
 
     @Override
     public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        if (arg.equals("?")) {
+            arg = help("?", map, text);
+        }
         switch (arg) {
             case "0":
                 System.out.println(text.get("hallway_item0a"));
@@ -94,7 +98,15 @@ public class Hallway implements Commander {
 
     @Override
     public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
-        //TODO info player to move
+
+        Scanner sc = new Scanner(System.in);
+        if (arg.equals("?")&data.get(0)==0){// ground floor
+            System.out.println(text.get("hallway_item0?"));
+            if (data.get(8)==1){// time to party?
+                System.out.println(text.get("hallway_item1?"));
+            }
+            return sc.nextLine();
+        }
         return arg;
     }
 }

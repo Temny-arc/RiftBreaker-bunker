@@ -24,6 +24,9 @@ public class Entrance implements Commander {
 
     @Override
     public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        if (arg.equals("?")) {
+            arg = help("?", map, text);
+        }
         switch (arg) {
             case "0":
                 System.out.println(text.get("enterance_item0a"));
@@ -87,6 +90,16 @@ public class Entrance implements Commander {
 
     @Override
     public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        Scanner sc = new Scanner(System.in);
+        if (arg.equals("?")){
+            System.out.println(text.get("enterance_item0?"));
+            System.out.println(text.get("enterance_item1?"));
+            System.out.println(text.get("enterance_item2?"));
+            System.out.println(text.get("enterance_item3?"));
+            System.out.println(text.get("enterance_item4?"));
+            System.out.println(text.get("enterance_item5?"));
+            return sc.nextLine();
+        }
         return arg;
     }
 

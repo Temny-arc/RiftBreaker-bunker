@@ -24,23 +24,33 @@ public class CableOperator implements Commander {
 
     @Override
     public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        if (arg.equals("?")) {
+            arg = help("?", map, text);
+        }
         Scanner sc = new Scanner(System.in);
         switch (arg) {
             case "0":
-                System.out.println(text.get("cableoperator_item0a"));
-                if (map.get(111) == 0) {
+                System.out.println(text.get("kitchen_item1a"));
+                if (map.get(52) == 0) {
                     map.put(1, 1);
                 }
-                arg = sc.next();
-                if (arg.equals("1")) {
+                map.put(52, 1);
+                return map;
+            case "1":
+                System.out.println(text.get("cableoperator_item0a"));
+
+                    map.put(1, 1);
+
+
+
                     System.out.println(text.get("cableoperator_item1+"));
                     System.out.println(text.get("cableoperator_item1++"));
                     System.out.println(text.get("cableoperator_item1+++"));
                     System.out.println(text.get("cableoperator_item1++++"));
-                    map.put(112, 2);
-                } else {
+
+
                     map.put(111, 1);
-                }
+
                 return map;
                 /* its for a reason the map dont have more data now
             case "1":
@@ -78,6 +88,13 @@ public class CableOperator implements Commander {
 
     @Override
     public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+
+        Scanner sc = new Scanner(System.in);
+        if (arg.equals("?")) {
+            System.out.println(text.get("enterance_item0?"));
+            System.out.println(text.get("enterance_item1?"));
+            arg = sc.nextLine();
+        }
         return arg;
     }
 }

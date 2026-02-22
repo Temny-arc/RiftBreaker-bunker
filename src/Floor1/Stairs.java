@@ -7,6 +7,7 @@ import IngameSys.loadmode.Weapon;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Stairs implements Commander {
     //TODO this room will work like hallway
@@ -29,34 +30,57 @@ public class Stairs implements Commander {
 
     @Override
     public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
-        /*
-        switch (arg) {
-            case "0":
-                System.out.println("_item0a");
-                if (map.get(61) == 0) {
-                    map.put(1, 1);
-                }
-                map.put(21, 1);
-                return map;
-            case "1":
-                System.out.println("enterance_item1a");
-                if (map.get(22) == 0) {
-                    map.put(1, 1);
-                }
-                map.put(22, 1);
-                return map;
-            case "2":
-                System.out.println("enterance_item2a");
-                if (map.get(23) == 0) {
-                    map.put(1, 1);
-                }
-                map.put(23, 1);
-                return map;
+        if (arg.equals("?")) {
+            arg = help("?", map, text);
+        }
+        Scanner sc = new Scanner(System.in);
+        if (map.get(60)==0){
+            System.out.println(text.get("stairs_item"));
+            System.out.println(text.get("stairs_items?"));
+            System.out.println(text.get("stairs_items+?"));
+            arg = sc.nextLine();
+            if (arg.equals("0")){
+                map.replace(60,1);// reactor overloaded
+            } else {
+                map.put(5,5);// necro combat
+                map.replace(60,0);
+            }
+        } else if (map.get(60)==1) {
 
+        } else {
+            switch (arg) {
+                case "0":
+                    System.out.println("stairs_item0a");
+                    if (map.get(61) == 0) {
+                        map.put(1, 1);
+                    }
+                    map.put(61, 1);
+                    return map;
+                case "1":
+                    System.out.println("stairs_item1a");
+                    if (map.get(62) == 0) {
+                        map.put(1, 1);
+                    }
+                    map.put(62, 1);
+                    return map;
+                case "2":
+                    System.out.println("stairs_item2a");
+                    if (map.get(63) == 0) {
+                        map.put(1, 1);
+                    }
+                    map.put(63, 1);
+                    return map;
+                case "3":
+                    System.out.println("stairs_item3a");
+                    if (map.get(64) == 0) {
+                        map.put(1, 1);
+                    }
+                    map.put(64, 1);
+                    return map;
 
+            }
         }
 
-         */
         System.out.println();
         return map;
     }
@@ -76,6 +100,15 @@ public class Stairs implements Commander {
 
     @Override
     public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+
+        Scanner sc = new Scanner(System.in);
+        if (arg.equals("?")&data.get(60)==2){ //
+            System.out.println(text.get("stairs_item0?"));
+            System.out.println(text.get("stairs_item1?"));
+            System.out.println(text.get("stairs_item2?"));
+            System.out.println(text.get("stairs_item3?"));
+            return sc.nextLine();
+        }
         return arg;
     }
 }

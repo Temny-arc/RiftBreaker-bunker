@@ -103,9 +103,10 @@ public class BedRoom implements Commander {
 
     @Override
     public String help(String arg, HashMap<Integer, Integer> data, HashMap<String, String> text) {
+        Scanner sc = new Scanner(System.in);
         if (arg.equals("?")){
             System.out.println(text.get(text.get("bedroom_items0-6?")));
-
+            arg = sc.nextLine();
         }
 
         return arg;
