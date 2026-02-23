@@ -9,7 +9,5 @@ public class Main {
         Control c = new Control();
         c.director();
 
-
-
     }
 }

@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Entrance implements Commander {
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
-        map.replace(0,0);
+        map.put(0,0);
         System.out.println("moving to hallway");
         return map;
     }
@@ -24,16 +24,19 @@ public class Entrance implements Commander {
 
     @Override
     public HashMap<Integer, Integer> search(String arg, HashMap<Integer, Integer> map, HashMap<String, String> text) {
+        System.out.println("GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA");
         if (arg.equals("?")) {
             arg = help("?", map, text);
         }
         switch (arg) {
             case "0":
+
                 System.out.println(text.get("enterance_item0a"));
                 if (map.get(31) == 0) {
                     map.put(1, 1);
                 }
                 map.put(31, 1);
+                System.out.println(map);
                 return map;
             case "1":
                 System.out.println(text.get("enterance_item1a"));
