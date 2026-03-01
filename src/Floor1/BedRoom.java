@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class BedRoom implements Commander {
-    //TODO exact same as before
+
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
         if (arg.equals("bathroom")||arg.equals("3")){
@@ -76,6 +76,7 @@ public class BedRoom implements Commander {
                     map.put(1, 1);
                 }
                 map.put(25, 1);
+                map.put(6, 2);
                 return map;
             case "5":
                 System.out.println(text.get("bedroom_item5a"));

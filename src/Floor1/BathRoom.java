@@ -13,7 +13,10 @@ public class BathRoom implements Commander {
 
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
-
+        if (arg.equals("bedroom")) {
+            map.replace(0, 2);
+            System.out.println("You have entered to bedroom");
+        }
 
         return map;
     }
@@ -35,6 +38,7 @@ public class BathRoom implements Commander {
                     map.put(1,1);
                 }
                 map.put(11,1);
+                map.put(7,2);
                 return map;
 
             case "1":

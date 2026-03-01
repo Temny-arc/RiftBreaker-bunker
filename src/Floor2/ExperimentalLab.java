@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class ExperimentalLab implements Commander {
-    //TODO exactly same as before
+
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
         if (arg.equals("cableroom")){
@@ -53,6 +53,7 @@ public class ExperimentalLab implements Commander {
                 if (map.get(141) == 0) {
                     map.put(1, 1);
                 }
+                map.put(6, 3);
                 map.put(143, 1);
                 return map;
             case "3":

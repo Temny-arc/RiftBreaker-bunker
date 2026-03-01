@@ -12,9 +12,21 @@ import java.util.Scanner;
 public class TechRooms implements Commander {
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
-        //TODO here player needs to decide which one he wants to visit, he can also move directly to second tech room
+            if (map.get(60)!= 0){
+                Scanner sc = new Scanner(System.in);
+                System.out.println("which room you want to go to");
+                arg = sc.nextLine();
+                if (arg.equals("0")){
+                    map.replace(0, 5);
+                } else {
+                    map.replace(0, 6);
+                }
 
-            map.replace(0, 0);
+            } else {
+
+            }
+
+
 
         return map;
     }
@@ -32,7 +44,7 @@ public class TechRooms implements Commander {
         }
 
 
-        if (map.get(0)== 60){ //
+        if (map.get(0)== 5){ //
             switch (arg) {
                 case "0":
                     System.out.println(text.get("techrooma_item0a"));

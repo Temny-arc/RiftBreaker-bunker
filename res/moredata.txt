@@ -21,22 +21,16 @@ weapon_ultimate;Coffee cup;353;melee;Someone left their cup, do to its often use
 switch
 enterance_item0?;there apears to be an interesting item lying on the floor do you want to pick it? yes = 0 no =1
 enterance_item0a;Its a bandage, this could prove usefully, tho someone used it before
-enterance_item0b;There is something that dont fit here.
 enterance_item1?;When you look at the wall you see an old mech it may prove useful in defence. do you want to activate it? yes = 0 no =1
 enterance_item1a;Mech seams to be active but it will need a pilot, you informed commander about it. He replied: "thank you"
-enterance_item1b;It may be dangerous to activate it so you decided to not turn it on.
 enterance_item2?;On the ground there is a something that reflects the light its buried in snow. Do you want to look at it? yes = 0 no =1
 enterance_item2a;Once you look get close you find that it was a light bump. But there isnt any light broken.
-enterance_item2b;It cant be that interesting you have other things to do
 enterance_item3?;When you are looking at the snow you see foot trails, they lead to a small room do you want to check it out? yes = 0 no =1
 enterance_item3a;When you enter the room some enemy jumps on you. FIGHT!
-enterance_item3b;Those foot trails are interesting, but it may be a trap.
 enterance_item4?;On the left there is a locked container do you want to open it? yes = 0 no =1
 enterance_item4a;It took a while, but you managed to open it. Unfortunately there is nothing inside
-enterance_item4b;It lock frozen and there is probably nothing in it anyway.
 enterance_item5?;A cable is coming out of the wall. Do you want to check it out? yes = 0 no =1
 enterance_item5a;Cable is cold, yet you can feel warm from the below. The reason why its in here is remain of some item that was slammed here
-enterance_item5b;It may be dangerous. Better not walk close near it
 hallway_item0?;You notice that part of the floor is missing. It looks like it's some kind of power structure. It may help outside. Do you want to use it? yes = 0 no =1
 hallway_item1?;Data from area are clear if portal is powered somewhere its here. Data also points that if you turn it of a huge icy wave will apear. End the game by turning of the portal. yes = 0 no =1
 hallway_item1a;Kind of tough decide which of your friends got to die, Isn't it? Good news is you got this one choom who is already dead.
@@ -46,11 +40,11 @@ hallway_item1a++;"Plan?" Well, might be how Rouge operates. I say you grab the h
 hallway_item1a+++;If Control is so outside, like data points it is. You`ll just have to find a car.
 hallway_item1a++-;If I gotta die, rather fall into my grave gun in hand and on fire. And not draw anyone down with me.
 hallway_item1a++++;Huh, you just discoverer what il takes to become a legend... Grab your iron      -let`s mobilise.
-bedroom_items0-6?;You notice bunch of crates in this room and some beds tied to them. If you want to investigate type a-f or 1-6.
+bedroom_items0-6?;You notice bunch of crates in this room and some beds tied to them. If you want to investigate type 1-6.
 bedroom_item0a;This crate contains mostly clothes. Strange that you found a hazmat suit so there must be a lab somewhere.
 bedroom_item1a;This crate have some diary in it if you want to read it. yes = 0 no = 1
 bedroom_item1a+;Hah this is my first day here. The place is big. Fascinating there is a reactor below us. Still dunno why. continue? yes = 0 no = 1
-bedroom_item1a++;I met some guy he seems cute, Unfortunately I have still so much to do I just cant talk to him. continue? yes = 0 no = 1
+bedroom_item1a++;I met some guy he seems cute, Unfortunately I have still so much to do I just cant talk to him.
 bedroom_item1a+++;I talked to him he was so nervous. I also played with some guy. It was so funny.Looks like there is only one page left. ;this cant bot read how to get any roblox girl to play with you
 bedroom_item1a++++;He is gone, why? why me? I`m giving up. So I signed as volunteer for the new project. I will probably not return but if yes I will find him.
 bedroom_item2a;Why is in this crate a cup. Like here is only coffee. also some coffee machine.;Kucharik pt0
@@ -65,7 +59,7 @@ bathroom_item1-;When you look to the shower. You notice a dead body and some thi
 bathroom_item1a;Men replied thank you. And then ask who you are you replied: I m searching for a safe spot.
 bathroom_item1a-;Body contained almost nothing exept a note turn on the f****** generator.
 bathroom_item2?;There is a interesting locker on the side. do you want to open it.
-bathroom_item2a;It turns out to be a blue keycard. Interesting is that its color is blue and has A and C on it.
+bathroom_item2a;Locker is jammed but you manage to open it. you see a photo of large flying creature, hell its bigger than aircraft carrier
 kitchen_item0?;There may be something in the fridge. Do you want to check it out?
 kitchen_item0a;Its interesting there is nothing in there .
 kitchen_item1?;There is some book in kitchen part. It could prove useful.
@@ -148,12 +142,14 @@ manufactory_item0a;There are four valves. time for a puzzle.
 manufactory_item0a+;Once valves are set. You hear commander calling you. "what have you done you bastard hahaha really good job out there".
 manufactory_item1?;Forge looks intact you may be able to make some weapon.
 manufactory_item1a;Here is a list of items you can make:
-manufactory_item1+?;You managed to get the blueprint for a Mafia knife you can make it here.;This is Mafia Old Country knife
-manufactory_item1++?;There is some blueprint for a sword or katana. It looks durable, It's made of Glemium.;This is galaxy sword
-manufactory_item1+-?;There is also a different thing called heat seeking briefcase.;Hitman reference its one of the most insane items.
-manufactory_item1+++?;You can use the acid on the sword here to enhance its power but there is also a risk from damage;This is galaxy sword
-manufactory_item1a+;Once Mafia knife is done you can feel some force that directs you to trow it into any spot.;this is for its heat seeking or something
+manufactory_item1+?;You managed to get the blueprint for a Mafia knife you can make it here.;This is Mafia Old Country knife for this one: 3
+manufactory_item1++?;There is some blueprint for a sword or katana. It looks durable, It's made of Glemium. for this one: 0;This is galaxy sword
+manufactory_item1+-?;There is also a different thing called heat seeking briefcase. for this one: 1;Hitman reference its one of the most insane items.
+manufactory_item1+++?;You can use the acid on the sword here to enhance its power but there is also a risk from damage for this one: 2; This is galaxy sword
+manufactory_item1a+;Once Mafia knife is done you can feel some force that directs you to throw it into any spot.;this is for its heat seeking or something
 manufactory_item1a++;The sword shines with pink color but, there is missing something in it. (blade also whispers: Consume)
+manufactory_item1a-;Heat seeking briefcase this thing is ready to kill all in its path
+manufactory_item1a+++;The scarlet flower blooms one more you will witness true horror, now root, let your flesh be consumed, by the scarlet rot. Once you realise Its coming from the blade you become
 manufactory_item2?;There is some trash lying around. Once you look closer you see some fragments.
 manufactory_item2a;When the alarm started someone was forging a weapon but it was done too late to be useful, hopefully you dont meet the same fate.
 manufactory_item3?;Someone have radio here but why there are notes on it. some music can help
@@ -161,7 +157,7 @@ manufactory_item3a;The note is for user its written: if someone turn this thing 
 manufactory_item3a+;The list of songs that you can play titled. I'm still standing, Fireworks, Rules of nature, Red sun, Subzero, In case of emergency play this; the songs give bonus value each does diferent scale frow best to worst: Subzero, Red sun, Firework, Rules of nature, I'm still standing and the last In case of emergency play this = I really want to stay at your house(it lowers your survival
 cryochamber_item0?;There is a stasis pod here. there is someone inside. You must find a way how to get him out.
 cryochamber_item0a+;Issue: The stasis pod is locked. there are some ways how to open it. You can solve a puzzle in order to open it. Find the switch.
-cryochamber_item0a-;Or you can use keycard that you have found;you need A card
+cryochamber_item0a-;Or you can use keycard that you have found, well no someone broke the scanner you will need to do it manually;you need A card
 cryochamber_item0a++;Once the pod is open you hear someone talking that must be the person. It turns out to be a women. She introduce yourself as Alice. She will follow you around.woman woman woman
 cryochamber_item1?;There is some container on the far side of the room there is something flowing in it.
 cryochamber_item1a;When you walk close you see a tank. You behold an abomination, some sort of hybrid between human and frost monsters. Whoever done that has to pay.
@@ -223,3 +219,17 @@ ending_love;Alice stops, then suddenly you faint away, after some time you wake 
 ending_love;Well well well, I hope you didn't expect this, I believe we have made it thanks to you and Alice, so my natural assumption is to give you two some time alone, Alr boys move out
 ending_love;I thank you to help me find myself there, my reward will be large but now lets keep it as this: she kissed you      Ok gg you won and got a girlfriend or smt, Gleba
 gleba;GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA GLEBA
+enter_enera;You have entered to entrance
+enter_hall;You have entered to hallway
+enter_bed;You have entered to bedroom
+enter_bath;You have entered to bathroom
+enter_kit;You have entered to kitchen
+enter_tech;You have entered to techrooms
+enter_stairs;You have entered to stairs
+enter_cab;You have entered to room with Cable car
+enter_concab;You have entered to cable operator
+enter_explab;You have entered to experimental lab
+enter_manu;You have entered to manufacture
+enter_lab;You have entered to laboratory
+enter_cryo;You have entered to cryochamber
+enter_cont;You have entered to control room

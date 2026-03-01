@@ -16,31 +16,44 @@ public class Hallway implements Commander {
         if (map.get(0)== 0) {
             if (arg.equals("bedroom")) {
                 map.replace(0, 2);
+                System.out.println("You have entered to bedroom");
             }
-            if (arg.equals("enterance")) {
+            if (arg.equals("entrance")) {
                 map.replace(0, 1);
+                System.out.println("You have entered to entrance");
             }
-            if (arg.equals("TechRoom")) {
+            if (arg.equals("techroom")) {
                 map.replace(0, 5);
+                System.out.println("You have entered to techroom");
             }
-            if (arg.equals("bedroom")) {
+            if (arg.equals("stairs")) {
                 map.replace(0, 7);
+                System.out.println("You have entered to stairs");
             }
         } else {
+            if (arg.equals("stairs")) {
+                map.replace(0, 7);
+                System.out.println("You have entered to stairs");
+            }
             if (arg.equals("cableoperator")){
                 map.replace(0,9);
+                System.out.println("You have entered to cable operator");
             }
             if (arg.equals("cableroom")){
                 map.replace(0,10);
+                System.out.println("You have entered to room with Cable car");
             }
             if (arg.equals("controlroom")){
                 map.replace(0,11);
+                System.out.println("You have entered to control room");
             }
             if (arg.equals("cryochamber")){
                 map.replace(0,12);
+                System.out.println("You have entered to cryochamber");
             }
-            if (arg.equals("manufactory")){
+            if (arg.equals("manufacture")){
                 map.replace(0,15);
+                System.out.println("You have entered to manufacture");
             }
         }
 

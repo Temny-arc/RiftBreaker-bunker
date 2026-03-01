@@ -10,16 +10,14 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Stairs implements Commander {
-    //TODO this room will work like hallway
+
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
-
-        if (true){
-            //TODO logic
-            map.replace(0,0);// for the first floor
-
-
+        if (arg.equals("up")&map.get(0)!=0) {
+            map.replace(0, 8);
+            System.out.println("You have entered to the second floor");
         }
+
         return map;
     }
 
@@ -43,10 +41,11 @@ public class Stairs implements Commander {
                 map.replace(60,1);// reactor overloaded
             } else {
                 map.put(5,5);// necro combat
-                map.replace(60,0);
+                map.replace(60,2);
             }
+            map.put(3, map.get(3)+5); // more time
         } else if (map.get(60)==1) {
-
+            System.out.println(text.get("stairs_itema-"));
         } else {
             switch (arg) {
                 case "0":

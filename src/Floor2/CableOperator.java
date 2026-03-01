@@ -13,7 +13,10 @@ public class CableOperator implements Commander {
     //TODO exactly same as before
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
-        map.replace(0,8);
+        if (arg.equals("hallway")) {
+            map.replace(0,8);
+        }
+
         return map;
     }
 

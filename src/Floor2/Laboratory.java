@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Laboratory implements Commander {
-    //TODO exactly same as before
+
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
         if (arg.equals("cryochamber")){

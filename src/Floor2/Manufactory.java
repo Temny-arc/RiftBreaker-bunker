@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Manufactory implements Commander {
-    //TODO exactly same as before
+
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
         if (arg.equals("experimentallab")){
@@ -45,17 +45,40 @@ public class Manufactory implements Commander {
                 return map;
             case "1":
                 System.out.println(text.get("manufactory_item1a"));
-                    if (map.get(101) == 1) {
-                        System.out.println(text.get("manufactory_item1+?"));
-                    }
+
                     System.out.println(text.get("manufactory_item1++?"));
                     System.out.println(text.get("manufactory_item1+-?"));
+                if (map.get(101) == 1) {
+                    System.out.println(text.get("manufactory_item1+?"));
+                }
                     if (map.get(151)!=0) {
-                        System.out.println(text.get("manufactory_item1a++?"));
+                        System.out.println(text.get("manufactory_item1a+++?"));
                     }
                 arg = sc.nextLine();
-                    //TODO create more weapons
-                            System.out.println(text.get("manufactory_item0a"));
+
+                    switch (arg) {
+                        case "0":
+                            System.out.println(text.get("manufactory_item0a++"));
+                            map.put(6, 0);
+                            break;
+                        case "1":
+                            System.out.println(text.get("manufactory_item0a-"));
+                            map.put(6, 0);
+                            break;
+                        case "2":
+                            if (map.get(151)!=0) {
+                                System.out.println(text.get("manufactory_item0a++"));
+                                map.put(6, 0);
+                            }
+                            break;
+                        case "3":
+                            if (map.get(101) == 1) {
+                                System.out.println(text.get("manufactory_item0a+"));
+                                map.put(6, 0);
+                            }
+                            break;
+                    }
+
 
 
                 map.put(162, 1);

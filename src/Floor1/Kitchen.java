@@ -13,7 +13,10 @@ public class Kitchen implements Commander {
     //TODO exact same as before
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
-        map.replace(0,0);
+        if (arg.equals("hallway")) {
+            map.replace(0, 0);
+            System.out.println("You have entered to the hallway");
+        }
         return map;
     }
 
@@ -41,6 +44,7 @@ public class Kitchen implements Commander {
                 if (map.get(52) == 0) {
                     map.put(1, 1);
                 }
+                map.put(6, 1);
                 map.put(52, 1);
                 return map;
             case "2":

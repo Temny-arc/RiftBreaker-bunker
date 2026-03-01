@@ -4,7 +4,7 @@
       "id": "item_bluekey",
       "name": "Blue Keycard",
       "type": "CARD",
-      "description": "This keycard is blue, you can also notice an id on it: 425571"
+      "description": "This keycard is blue, you can also notice an id on it: 425571 and letters A,C"
     },
     {
       "id": "item_redkey",
@@ -16,7 +16,7 @@
       "id": "item_yellowkey",
       "name": "Yellow Keycard",
       "type": "CARD",
-      "description": "This keycard is blue, you can also notice an id on it: 425571 and letters A,C"
+      "description": "This keycard is blue, you can also notice an id on it: 425571 and letters B,D"
     },
     {
       "id": "item_greenkey",

@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class ContolRoom implements Commander {
-    //TODO exactly same as before(Operation ice is nice)
+
     @Override
     public HashMap<Integer, Integer> move(String arg, HashMap<Integer, Integer> map) {
         if (arg.equals("Lab")){
@@ -63,9 +63,11 @@ public class ContolRoom implements Commander {
                 System.out.println(text.get("controlroom_item3a+"));
                 if (map.get(2)== 39 & map.get(131)!=0) { // trigger for secret ending
                     System.out.println(text.get("controlroom_item3a-+"));
-                    map.put(6, 1); // now lets begin
+                    map.put(9, 1); // now lets begin
+                    map.put(2, 40);// trigger the end
+                    map.put(1, 4); // for the second cycle
                 }
-                //TODO complete game ending
+
 
         }
         return map;

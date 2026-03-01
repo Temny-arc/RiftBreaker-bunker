@@ -160,29 +160,52 @@ public class Control {
         return false;
 
     }
+
+    /**
+     * Base for the program handles most items and makes sure it works
+      * @return just to end the game like it will not return anything
+     */
     public String director(){
-        //TODO spojeni se vsim
+        for (int i = 0; i < 200; i++) {
+            data.put(i, 0);
+        }
         comando();// map activation
         l = Loader.load("res/moredata.txt");
-
-        data.put(0,1); // room where you are in
-        data.put(1,1); // cost of action
+        data.put(5,-1); // room where you are in
+        data.put(7,-1); // cost of action
+        data.put(3,15);
+        exit = true;
         int c = 0;
         turn = 0;
         try { // this is basic version it will be updated but due to the program still not having everything we are still by this
-            while (turn < 40) { // counter for turns works as main cycle
+            while (turn < 40) {// counter for turns works as main cycle
+                if (!exit||turn > data.get(3)) {
+                    if (turn > data.get(3)) {
+                        System.out.println(bliz.get("ending_bad:"));
+                        System.out.println(bliz.get("ending_bad+"));
+                        return null;
+                    } else {
+                        System.out.println(bliz.get("ending_bitter:"));
+                        System.out.println(bliz.get("ending_bitter+"));
+                        return null;
+                    }
+                }
                 while (c < 4) { // defines the players turn
                     executor();
                     c = c + data.get(1);// consumed action? also how many
-                    System.out.println(c);
+
+                    backturn();
+
                 }
                 // expect this to be upgraded so not now
                 //enemyturn();
 
-
-                turn--;// It's just a for i but bit "enhanced"
-                break; // for now
+                c = 0;
+                turn++;// It's just a for i but bit "enhanced"
             }
+
+
+
 
 
 
@@ -212,7 +235,31 @@ public class Control {
         //TODO dat data z mapy do souboru
     }
 
-    public void enemyturn(HashMap<String,String> txtdata){
+    public void enemyturn(){
+
+    }
+
+    /**
+     * this new thing is doing some insystem stuff like combat or items
+     *
+     */
+    public void backturn(){
+
+        Combat comat = new Combat();
+
+        if (data.get(5)>0){ // combat trigger
+            exit = comat.fight(data.get(5),player,l.getWeapons());
+            data.put(5,-1);
+        }
+        if (data.get(6)>0){ // easy weapon getter tho we will still need a special version for the katana
+            l.getWeapons().get(data.get(6)).Obtain();
+            data.put(6,-1);
+        }
+        if (data.get(7)>0){ // easy weapon getter tho we will still need a special version for the katana
+            l.getItems().get(data.get(7)).Obtain();
+            data.put(7,-1);
+        }
+        turn = turn + data.get(2);
 
     }
 

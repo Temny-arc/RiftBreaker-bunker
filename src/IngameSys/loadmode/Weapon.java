@@ -25,4 +25,7 @@ public class Weapon {
     public void deObtain() {
         this.obtained = false;
     }
+    public int getDmg() {
+        return dmg;
+    }
 }
