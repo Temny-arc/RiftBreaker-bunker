@@ -232,7 +232,7 @@ public class Control {
         return null;
     }
     public void save(){
-        //TODO dat data z mapy do souboru
+
     }
 
     public void enemyturn(){
