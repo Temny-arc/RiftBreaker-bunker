@@ -35,7 +35,7 @@ public class Entrance implements Commander {
                     map.put(1, 1);
                 }
                 map.put(31, 1);
-                System.out.println(map);
+
                 return map;
             case "1":
                 System.out.println(text.get("enterance_item1a"));

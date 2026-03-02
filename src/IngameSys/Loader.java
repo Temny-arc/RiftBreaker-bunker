@@ -85,20 +85,20 @@ public class Loader {
             while (!s.equals("switch")){ // this is for separation of systems
                 String b[] = s.split(";");
                 loader.items.add(new Item(b[0],b[1],b[2],b[3]));//fills the items with the data from file
-                System.out.println(b[0]+" item");
+
                 s = br.readLine();
             }
             s = br.readLine();
             while (!s.equals("switch")){
                 String b[] = s.split(";");
                 loader.chara.add(new GameCharacter(b[0],b[1],b[2],b[3],b[4]));
-                System.out.println(b[0]+" character");
+
                 s = br.readLine();
             }
             s = br.readLine();
             while (!s.equals("switch")){
                 String b[] = s.split(";");
-                System.out.println(b[0]+b[2]);
+
 
                 loader.weapons.add(new Weapon(b[0],b[1],Integer.parseInt(b[2]),b[3],b[4]));
                 s = br.readLine();
@@ -108,7 +108,7 @@ public class Loader {
             while (s != null){
                 String b[] = s.split(";");
                 if (b.length>1) { // there was issue with empty lines
-                    System.out.println(b[1] + " value");
+
                     loader.dialog.put(b[0], b[1]);
                 }
                 s = br.readLine();

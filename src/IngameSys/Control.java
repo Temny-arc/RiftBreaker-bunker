@@ -138,7 +138,6 @@ public class Control {
         prikaz = prikaz.toLowerCase();
         decode d  =new decode();
         String[] s = d.decod(prikaz);
-        System.out.println(s[0]+" s0 "+ s[1]+" s1");
         switch (s[0]){
             case "move":
                 trigger.get(decider(data.get(0))) // decide which room will be working
@@ -173,7 +172,10 @@ public class Control {
         l = Loader.load("res/moredata.txt");
         data.put(5,-1); // room where you are in
         data.put(7,-1); // cost of action
-        data.put(3,15);
+        data.put(3,15); // timer for the base
+        data.put(0,1); // start at hallway
+        bliz = l.getDialog();
+        player = new Player("John",0,5,5,5);
         exit = true;
         int c = 0;
         turn = 0;

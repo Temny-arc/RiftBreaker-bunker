@@ -17,12 +17,10 @@ public class decode {
         if (txt.matches("[a-z]+[ ][a-z]+")){
          // this is basicaly how it will work
             String[] words = txt.split(" ");
-            System.out.println(words[0]+"decoder");
             return words;
         }
         if (txt.matches("[a-z]+[ ][0-9]+")){
             String[] words = txt.split(" ");
-            System.out.println(words[0]+"decoder");
             return words;
 
         }

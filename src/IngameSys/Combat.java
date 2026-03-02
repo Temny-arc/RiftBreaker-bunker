@@ -24,6 +24,7 @@ public class Combat {
         Random rd = new Random();// for the enemy
         int c = 0;// counter for now then it will do something else
         ArrayList<Weapon> actual = new ArrayList<>();
+        System.out.println("here is a list of your weapons, if you cant see any just ignore this");
         for (int i = 0; i < w.size(); i++) {
             if (w.get(i).isObtained()){// this is to add items you can into selection
                 actual.add(w.get(i));
@@ -61,6 +62,7 @@ public class Combat {
             } else { // this is just a protective measure
                  c = rd.nextInt(2)+4;
             }
+            c = c + wdmg;
             if (rd.nextDouble(crit)<25){ // critical chance not ideal but its something
                 c = c *2;
             }
@@ -69,7 +71,6 @@ public class Combat {
             if (combater.getDmgtype()> 1){
                 hp = hp -combater.getDmg();//magic dmg
             } else if (combater.getDmgtype() == 0) {
-                System.out.println(combater.getDmg());
                 hp = hp -(combater.getDmg()/defence)-1;
             } else {
                 hp = hp -(combater.getDmg()/defence);
